@@ -242,3 +242,50 @@ The existing data-quality checks provide a foundation for pipeline observability
 3. Run each experiment against both DAGs and record actual outcomes.
 4. Confirm that invalid records are quarantined with specific rejection reasons.
 5. Verify that recovery, retries and failure states are visible through Airflow and the audit table.
+
+
+# Part G: Recommendation to the Client
+
+**To:** Sameer, Chief Technology Officer (CTO)  
+**Subject:** Recommendation for NammaMart Data Pipeline — ETL vs. ELT
+
+Dear Sameer,
+
+After evaluating the ETL and ELT pipelines developed for NammaMart, I recommend **ELT as the primary architecture for long-term growth**, with targeted ETL-style validation where early rejection or transformation is necessary.
+
+Both pipelines demonstrate ways to ingest order data, apply data-quality checks, and produce analytical outputs. The ELT implementation uses SQL-based transformations and records quality-check results in `dq_results`. The ETL implementation uses Python-based validation and transformation. This comparison provides a practical foundation for choosing an architecture, although the full set of observability experiments and a 1000× volume benchmark must be completed before making definitive performance claims.
+
+### Evaluation of the two approaches
+
+**1. Auditability**
+
+ELT retains data in raw tables before transforming it, providing a useful starting point for investigating source records and reconciling downstream results. Its SQL-based quality checks also make failed checks visible through `dq_results`. ETL can provide strong auditability through validation logs and quarantine records, but its audit trail depends on which original records and transformation details are retained. For either approach, a run-level audit table recording run IDs, row counts, timestamps and status is essential.
+
+**2. Data-quality guarantees**
+
+The ETL pipeline uses Python validation, while the ELT pipeline implements SQL checks across dimensions such as completeness, uniqueness, validity, accuracy, consistency and timeliness. These checks help identify bad data, but neither architecture guarantees data quality automatically. Critical failures must be quarantined or excluded from analytical marts, warnings must be recorded, and the results must be tested against deliberately introduced bad data.
+
+**3. Ease of change**
+
+ELT is preferable when business rules and analytical requirements change frequently. SQL transformations and mart definitions can be updated without necessarily changing the ingestion process. Retaining raw data also makes it easier to reprocess records when rules change. ETL remains useful when records must be validated, masked or rejected before they enter downstream storage.
+
+**4. Performance at 1000× data volume**
+
+ELT is the preferred direction for growth because it can use database query optimisation, incremental transformations, appropriate indexing or partitioning, and workload scaling where supported by the chosen platform. However, the current experiments do not establish how either pipeline performs at 1000× volume. Before production adoption, benchmark runtime, memory use, query performance, concurrency and incremental-load behaviour using representative larger datasets.
+
+**5. Cost**
+
+ELT can reduce duplicated transformation logic and make better use of existing database infrastructure. Its costs can increase with raw-data retention, storage, repeated transformations and compute-intensive queries. ETL may reduce downstream storage or processing when it filters data early, but adds Python execution, orchestration and maintenance overhead. The final decision should use measured compute consumption, storage requirements and operational effort rather than assuming either approach is always cheaper.
+
+### Final recommendation
+
+Adopt **ELT as the primary analytical pipeline**, retaining raw data for traceability and using SQL-based transformations for staging and marts. Apply early ETL-style validation where necessary for sensitive data, malformed records or strict ingestion requirements. Strengthen both pipelines with consistent quarantine rules, run-level auditing, volume and freshness alerts, and repeatable recovery tests.
+
+### Top 3 risks of the recommended design
+
+1. **Poor-quality data reaching analytics:** Incomplete quarantine or filtering could allow invalid records to affect financial reporting.
+2. **Increasing compute and storage costs:** Retaining raw data and repeatedly transforming growing datasets may increase costs without incremental processing and workload controls.
+3. **Insufficient operational visibility:** Without a verified run audit, volume alerts, freshness thresholds and tested recovery procedures, failures or data drift may remain undetected.
+
+Regards,  
+Data Engineering Team
