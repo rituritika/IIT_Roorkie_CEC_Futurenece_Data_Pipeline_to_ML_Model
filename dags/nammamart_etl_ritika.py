@@ -375,11 +375,11 @@ def build_reports():
             """
             CREATE OR REPLACE TABLE etl_category_margin AS
             SELECT
-                category,
+                COALESCE(category, 'Uncategorized') AS category,
                 SUM(net_revenue) AS net_revenue,
                 SUM(gross_margin) AS gross_margin
             FROM etl_fact_orders
-            GROUP BY category
+            GROUP BY COALESCE(category, 'Uncategorized')
             """
         )
 
