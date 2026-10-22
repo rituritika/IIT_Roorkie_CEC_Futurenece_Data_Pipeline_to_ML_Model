@@ -82,3 +82,16 @@ The profiling results will be used to define validation, quarantine, and reconci
 - Review mismatched payments, including pending or failed payments.
 - Further validate rerun idempotency and incremental processing.
 - Validate the Airflow DAG in the Airflow environment.
+
+## Part B: September ETL vs. ELT Comparison
+
+| Metric | Part A: ETL | Part B: ELT |
+|---|---:|---:|
+| Distinct orders | 2,356 | 2,377 |
+| Net revenue | ₹12,91,917.55 | ₹13,39,932.63 |
+
+For September 2026, the ELT pipeline processed 21 more distinct orders and ₹48,015.08 more net revenue than the ETL pipeline.
+
+The pipelines do not yet produce identical results. The exact cause has not been confirmed. Potential causes include differences in data-quality filtering, incremental updates, and transformation logic. Further validation is required.
+
+The ELT pipeline preserves source records in the raw layer and applies deduplication and data-quality checks in the staging layer before building the marts.

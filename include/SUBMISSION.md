@@ -89,15 +89,15 @@ The profiling results will be used to define validation, quarantine, and reconci
 - Validate whether order IDs already exist in orders.csv — Uniqueness — Warning
 - Confirm incremental records are processed as updates or inserts based on order_id — Consistency — High
 
-### Part B: September ETL vs. ELT Comparison
+## Part B: September ETL vs. ELT Comparison
 
 | Metric | Part A: ETL | Part B: ELT |
 |---|---:|---:|
 | Distinct orders | 2,356 | 2,377 |
 | Net revenue | ₹12,91,917.55 | ₹13,39,932.63 |
 
-The ELT pipeline processed 21 more distinct orders and ₹48,015.08 more net revenue than the ETL pipeline for September 2026.
+For September 2026, the ELT pipeline processed 21 more distinct orders and ₹48,015.08 more net revenue than the ETL pipeline.
 
-The difference indicates that the pipelines do not yet produce identical results. Further validation is required to identify the exact cause, including potential differences in data-quality filtering, incremental updates, and transformation logic.
+The pipelines do not yet produce identical results. The exact cause of the difference has not been confirmed. Potential causes include differences in data-quality filtering, incremental updates, and transformation logic. Further validation is needed to identify the cause and ensure both pipelines apply equivalent business rules.
 
 The ELT pipeline preserves source records in the raw layer and applies deduplication and data-quality checks in the staging layer before building the marts.
