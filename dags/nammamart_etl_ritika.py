@@ -1,10 +1,11 @@
 
 from datetime import datetime, timedelta
+from io import StringIO
 from pathlib import Path
-import pendulum
 
 import duckdb
 import pandas as pd
+import pendulum
 
 from airflow.sdk import dag, task
 
@@ -14,61 +15,92 @@ DATA_DIR = BASE_DIR / "include" / "data" / "nammamart"
 QUARANTINE_DIR = BASE_DIR / "include" / "quarantine" / "ritika"
 DB_PATH = BASE_DIR / "include" / "nammamart_etl_ritika.duckdb"
 
-
-BASE_FILES = [
-    "orders.csv",
-    "payments.csv",
-    "customers.csv",
-    "products.csv",
-    "stores.csv",
-]
+INCREMENT_FILE = "orders_2026-10-01_increment.csv"
 
 
-def run_etl():
+# ---------- EXTRACTION HELPERS ----------
+
+def extract_csv(filename, include_increment=False):
+    """Read one source file and return a JSON payload for Airflow XCom."""
+    path = DATA_DIR / filename
+
+    if not path.exists():
+        raise FileNotFoundError(f"Missing source file: {path}")
+
+    frame = pd.read_csv(path)
+
+    # Incremental orders are included in the orders extraction task.
+    if include_increment:
+        increment_path = DATA_DIR / INCREMENT_FILE
+
+        if not increment_path.exists():
+            raise FileNotFoundError(
+                f"Missing incremental file: {increment_path}"
+            )
+
+        increment = pd.read_csv(increment_path)
+        frame = pd.concat([frame, increment], ignore_index=True)
+
+    # Standardize whitespace in string columns.
+    for column in frame.select_dtypes(include=["object", "string"]).columns:
+        frame[column] = frame[column].apply(
+            lambda value: value.strip() if isinstance(value, str) else value
+        )
+
+    # Normalize common payment method variants.
+    for column in ("payment_method", "payment_mode"):
+        if column in frame.columns:
+            frame[column] = (
+                frame[column]
+                .astype("string")
+                .str.strip()
+                .str.upper()
+            )
+
+    return frame.to_json(orient="split", date_format="iso")
+
+
+def decode_frame(payload):
+    """Convert an extracted XCom JSON payload back to a DataFrame."""
+    return pd.read_json(StringIO(payload), orient="split")
+
+
+# ---------- TRANSFORM AND LOAD ----------
+
+def run_etl(
+    orders_payload,
+    payments_payload,
+    customers_payload,
+    products_payload,
+    stores_payload,
+):
     run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
     QUARANTINE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. EXTRACT source files
-    data = {}
+    orders = decode_frame(orders_payload)
+    payments = decode_frame(payments_payload)
+    customers = decode_frame(customers_payload)
+    products = decode_frame(products_payload)
+    stores = decode_frame(stores_payload)
 
-    for filename in BASE_FILES:
-        path = DATA_DIR / filename
-
-        if not path.exists():
-            raise FileNotFoundError(f"Missing source: {path}")
-
-        data[filename.removesuffix(".csv")] = pd.read_csv(path)
-
-    increment_path = DATA_DIR / "orders_2026-10-01_increment.csv"
-
-    if not increment_path.exists():
-        raise FileNotFoundError(f"Missing source: {increment_path}")
-
-    increment = pd.read_csv(increment_path)
-
-    # 2. COMBINE orders; incremental records take precedence
-    orders = pd.concat(
-        [data["orders"], increment],
-        ignore_index=True,
-    )
-
+    # 1. Deduplicate orders. Incremental records take precedence.
     orders = orders.drop_duplicates(keep="last")
     orders = orders.drop_duplicates(
         subset=["order_id"],
         keep="last",
     ).copy()
 
-    # 3. VALIDATE required fields and numeric values
-    numeric_cols = [
+    # 2. Validate orders.
+    numeric_columns = [
         "quantity",
         "unit_price",
         "discount_pct",
         "order_amount",
     ]
 
-    for col in numeric_cols:
-        orders[col] = pd.to_numeric(
-            orders[col],
+    for column in numeric_columns:
+        orders[column] = pd.to_numeric(
+            orders[column],
             errors="coerce",
         )
 
@@ -89,16 +121,16 @@ def run_etl():
         "invalid_order_amount": ~orders["order_amount"].ge(0),
     }
 
-    failed = pd.DataFrame(checks, index=orders.index)
-    valid = ~failed.any(axis=1)
+    failed_checks = pd.DataFrame(checks, index=orders.index)
+    valid_mask = ~failed_checks.any(axis=1)
 
-    reasons = failed.apply(
+    failure_reasons = failed_checks.apply(
         lambda row: ";".join(row.index[row].tolist()),
         axis=1,
     )
 
-    rejected = orders.loc[~valid].copy()
-    rejected["failure_reason"] = reasons.loc[~valid]
+    rejected = orders.loc[~valid_mask].copy()
+    rejected["failure_reason"] = failure_reasons.loc[~valid_mask]
     rejected["run_id"] = run_id
 
     if not rejected.empty:
@@ -107,9 +139,9 @@ def run_etl():
             index=False,
         )
 
-    clean_orders = orders.loc[valid].copy()
+    clean_orders = orders.loc[valid_mask].copy()
 
-    # 4. STANDARDIZE and derive order measures
+    # 3. Derive order measures.
     clean_orders["order_date"] = (
         clean_orders["order_ts"].dt.strftime("%Y-%m-%d")
     )
@@ -120,23 +152,23 @@ def run_etl():
         * (1 - clean_orders["discount_pct"] / 100)
     ).round(2)
 
-    # 5. PREPARE dimension tables
-    customers = data["customers"].drop_duplicates(
+    # 4. Prepare dimensions and remove duplicate business keys.
+    customers = customers.drop_duplicates(
         subset=["customer_id"],
         keep="last",
     ).copy()
 
-    products = data["products"].drop_duplicates(
+    products = products.drop_duplicates(
         subset=["product_id"],
         keep="last",
     ).copy()
 
-    stores = data["stores"].drop_duplicates(
+    stores = stores.drop_duplicates(
         subset=["store_id"],
         keep="last",
     ).copy()
 
-    # Mask customer email and phone in the dimension
+    # Mask customer personal information.
     def mask_email(value):
         if pd.isna(value) or "@" not in str(value):
             return None
@@ -151,11 +183,13 @@ def run_etl():
         digits = "".join(ch for ch in str(value) if ch.isdigit())
         return "***" + digits[-4:] if digits else None
 
-    customers["email"] = customers["email"].apply(mask_email)
-    customers["phone"] = customers["phone"].apply(mask_phone)
+    if "email" in customers.columns:
+        customers["email"] = customers["email"].apply(mask_email)
 
-    # 6. JOIN using LEFT JOIN behavior
-    # Retain orders even if a dimension record is missing.
+    if "phone" in customers.columns:
+        customers["phone"] = customers["phone"].apply(mask_phone)
+
+    # 5. Build the order fact table with left joins.
     fact = (
         clean_orders
         .merge(
@@ -178,21 +212,16 @@ def run_etl():
         )
     )
 
+    # Identify missing dimension records.
     fact["dimension_quality"] = "PASS"
 
     missing_customer = fact["full_name"].isna()
     missing_product = fact["product_name"].isna()
     missing_store = fact["store_name"].isna()
 
-    fact.loc[missing_customer, "dimension_quality"] = (
-        "MISSING_CUSTOMER"
-    )
-    fact.loc[missing_product, "dimension_quality"] = (
-        "MISSING_PRODUCT"
-    )
-    fact.loc[missing_store, "dimension_quality"] = (
-        "MISSING_STORE"
-    )
+    fact.loc[missing_customer, "dimension_quality"] = "MISSING_CUSTOMER"
+    fact.loc[missing_product, "dimension_quality"] = "MISSING_PRODUCT"
+    fact.loc[missing_store, "dimension_quality"] = "MISSING_STORE"
 
     fact.loc[
         missing_product & missing_store,
@@ -211,9 +240,7 @@ def run_etl():
         ).le(15)
     )
 
-    # 7. PAYMENT RECONCILIATION
-    payments = data["payments"].copy()
-
+    # 6. Reconcile orders with payments.
     payments["amount_paid"] = pd.to_numeric(
         payments["amount_paid"],
         errors="coerce",
@@ -259,7 +286,24 @@ def run_etl():
         .map({True: "MATCH", False: "MISMATCH"})
     )
 
-    # 8. LOAD tables into DuckDB
+    reconciliation["reconciliation_reason"] = reconciliation.apply(
+        lambda row: (
+            "No payment recorded"
+            if row["payment_count"] == 0
+            else (
+                "Payment total differs from order amount "
+                f"by {row['amount_difference']:.2f}"
+            )
+        ),
+        axis=1,
+    )
+
+    # Assignment requirement: store only mismatches, with a reason.
+    reconciliation = reconciliation.loc[
+        reconciliation["reconciliation_status"] == "MISMATCH"
+    ].copy()
+
+    # 7. Load the warehouse tables idempotently.
     with duckdb.connect(str(DB_PATH)) as con:
         tables = [
             ("etl_dim_customer", customers),
@@ -271,36 +315,16 @@ def run_etl():
 
         for table_name, frame in tables:
             con.register("source_frame", frame)
+            try:
+                con.execute(
+                    f'CREATE OR REPLACE TABLE "{table_name}" AS '
+                    "SELECT * FROM source_frame"
+                )
+            finally:
+                con.unregister("source_frame")
 
-            con.execute(
-                f'CREATE OR REPLACE TABLE "{table_name}" AS '
-                "SELECT * FROM source_frame"
-            )
-
-            con.unregister("source_frame")
-
-        con.execute("""
-            CREATE OR REPLACE TABLE etl_daily_zone_revenue AS
-            SELECT
-                order_date,
-                zone,
-                SUM(net_revenue) AS daily_revenue,
-                COUNT(*) AS order_count
-            FROM etl_fact_orders
-            GROUP BY order_date, zone
-        """)
-
-        con.execute("""
-            CREATE OR REPLACE TABLE etl_category_margin AS
-            SELECT
-                category,
-                SUM(net_revenue) AS net_revenue,
-                SUM(gross_margin) AS gross_margin
-            FROM etl_fact_orders
-            GROUP BY category
-        """)
-
-        con.execute("""
+        con.execute(
+            """
             CREATE OR REPLACE TABLE etl_dq_results AS
             SELECT
                 ? AS run_id,
@@ -310,29 +334,77 @@ def run_etl():
                 'ERROR' AS severity,
                 ? AS rows_checked,
                 ? AS rows_failed,
-                CASE
-                    WHEN ? = 0 THEN 'PASS'
-                    ELSE 'FAIL'
-                END AS status,
+                CASE WHEN ? = 0 THEN 'PASS' ELSE 'FAIL' END AS status,
                 CURRENT_TIMESTAMP AS checked_at
-        """, [
-            run_id,
-            len(orders),
-            len(rejected),
-            len(rejected),
-        ])
-
-        print("ETL run:", run_id)
-        print("Orders after deduplication:", len(orders))
-        print("Orders processed:", len(clean_orders))
-        print("Orders quarantined:", len(rejected))
-        print("Joined fact rows:", len(fact))
-        print(
-            "Orders with missing dimensions:",
-            int((fact["dimension_quality"] != "PASS").sum()),
+            """,
+            [
+                run_id,
+                len(orders),
+                len(rejected),
+                len(rejected),
+            ],
         )
-        print("DuckDB database:", DB_PATH)
 
+    print("ETL run:", run_id)
+    print("Orders after deduplication:", len(orders))
+    print("Orders processed:", len(clean_orders))
+    print("Orders quarantined:", len(rejected))
+    print("Joined fact rows:", len(fact))
+    print("Payment mismatches:", len(reconciliation))
+    print("DuckDB database:", DB_PATH)
+
+
+# ---------- REPORTING ----------
+
+def build_reports():
+    with duckdb.connect(str(DB_PATH)) as con:
+        con.execute(
+            """
+            CREATE OR REPLACE TABLE etl_daily_zone_revenue AS
+            SELECT
+                order_date,
+                zone,
+                SUM(net_revenue) AS daily_revenue,
+                COUNT(*) AS order_count
+            FROM etl_fact_orders
+            GROUP BY order_date, zone
+            """
+        )
+
+        con.execute(
+            """
+            CREATE OR REPLACE TABLE etl_category_margin AS
+            SELECT
+                category,
+                SUM(net_revenue) AS net_revenue,
+                SUM(gross_margin) AS gross_margin
+            FROM etl_fact_orders
+            GROUP BY category
+            """
+        )
+
+        print("Daily zone revenue report:")
+        print(
+            con.execute(
+                """
+                SELECT * FROM etl_daily_zone_revenue
+                ORDER BY order_date, zone
+                """
+            ).fetchdf().to_string(index=False)
+        )
+
+        print("Category margin report:")
+        print(
+            con.execute(
+                """
+                SELECT * FROM etl_category_margin
+                ORDER BY category
+                """
+            ).fetchdf().to_string(index=False)
+        )
+
+
+# ---------- AIRFLOW DAG ----------
 
 @dag(
     dag_id="nammamart_etl_ritika",
@@ -348,11 +420,57 @@ def run_etl():
     tags=["nammamart", "etl", "assignment"],
 )
 def nammamart_etl():
-    @task
-    def extract_transform_load():
-        run_etl()
 
-    extract_transform_load()
+    @task
+    def extract_orders():
+        return extract_csv("orders.csv", include_increment=True)
+
+    @task
+    def extract_payments():
+        return extract_csv("payments.csv")
+
+    @task
+    def extract_customers():
+        return extract_csv("customers.csv")
+
+    @task
+    def extract_products():
+        return extract_csv("products.csv")
+
+    @task
+    def extract_stores():
+        return extract_csv("stores.csv")
+
+    @task
+    def transform_and_load(
+        orders_payload,
+        payments_payload,
+        customers_payload,
+        products_payload,
+        stores_payload,
+    ):
+        run_etl(
+            orders_payload,
+            payments_payload,
+            customers_payload,
+            products_payload,
+            stores_payload,
+        )
+        return "load_complete"
+
+    @task
+    def reporting(load_status):
+        build_reports()
+
+    loaded = transform_and_load(
+        extract_orders(),
+        extract_payments(),
+        extract_customers(),
+        extract_products(),
+        extract_stores(),
+    )
+
+    reporting(loaded)
 
 
 nammamart_etl()
