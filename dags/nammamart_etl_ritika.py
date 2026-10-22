@@ -330,27 +330,45 @@ def run_etl(
             finally:
                 con.unregister("source_frame")
 
-        con.execute(
-            """
-            CREATE OR REPLACE TABLE etl_dq_results AS
-            SELECT
-                ? AS run_id,
-                'nammamart_etl_ritika' AS dag_id,
-                'order_validation' AS check_name,
-                'validity' AS dimension,
-                'ERROR' AS severity,
-                ? AS rows_checked,
-                ? AS rows_failed,
-                CASE WHEN ? = 0 THEN 'PASS' ELSE 'FAIL' END AS status,
-                CURRENT_TIMESTAMP AS checked_at
-            """,
-            [
-                run_id,
-                len(orders),
-                len(rejected),
-                len(rejected),
-            ],
-        )
+        con.execute("""
+            CREATE TABLE IF NOT EXISTS etl_dq_results (
+                run_id VARCHAR,
+                dag_id VARCHAR,
+                check_name VARCHAR,
+                dimension VARCHAR,
+                severity VARCHAR,
+                rows_checked INTEGER,
+                rows_failed INTEGER,
+                status VARCHAR,
+                checked_at TIMESTAMPTZ
+            )
+        """)
+
+        checks = [
+            ("completeness_order_customer_id", "completeness", "Critical",
+             len(orders), int(orders["customer_id"].isna().sum())),
+            ("uniqueness_order_id", "uniqueness", "Critical",
+             len(orders), int(orders["order_id"].duplicated().sum())),
+            ("validity_order_validation", "validity", "Critical",
+             len(orders), len(rejected)),
+            ("accuracy_positive_quantity", "accuracy", "Critical",
+             len(orders), int((pd.to_numeric(orders["quantity"], errors="coerce") <= 0).sum())),
+            ("consistency_customer_reference", "consistency", "Critical",
+             len(orders), int((orders["customer_id"].notna() &
+                 ~orders["customer_id"].isin(customers["customer_id"])).sum())),
+            ("timeliness_no_future_orders", "timeliness", "Warning",
+             len(orders), int((orders["order_ts"] > pd.Timestamp.now()).sum())),
+        ]
+
+        for check_name, dimension, severity, rows_checked, rows_failed in checks:
+            con.execute("""
+                INSERT INTO etl_dq_results
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            """, [
+                run_id, "nammamart_etl_ritika", check_name, dimension,
+                severity, rows_checked, rows_failed,
+                "PASS" if rows_failed == 0 else "FAIL"
+            ])
 
     print("ETL run:", run_id)
     print("Orders after deduplication:", len(orders))

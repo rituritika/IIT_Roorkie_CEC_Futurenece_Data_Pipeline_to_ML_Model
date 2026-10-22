@@ -101,3 +101,23 @@ For September 2026, the ELT pipeline processed 21 more distinct orders and ₹48
 The pipelines do not yet produce identical results. The exact cause of the difference has not been confirmed. Potential causes include differences in data-quality filtering, incremental updates, and transformation logic. Further validation is needed to identify the cause and ensure both pipelines apply equivalent business rules.
 
 The ELT pipeline preserves source records in the raw layer and applies deduplication and data-quality checks in the staging layer before building the marts.
+
+
+## Part D: Data Quality Dimensions
+
+Implemented data-quality checks for six dimensions: completeness, uniqueness, validity, accuracy, consistency, and timeliness.
+
+### ELT Pipeline
+- Implemented SQL-based checks in `include/sql/dq_checks.sql`.
+- Recorded check results in `dq_results` with run ID, DAG ID, check name, dimension, severity, rows checked, rows failed, status, and timestamp.
+- Tested the ELT DAG successfully.
+- Failed checks are recorded in the scorecard for review.
+
+### ETL Pipeline
+- Implemented Python-based order validation and quarantine of rejected orders.
+- ETL quality results are recorded in `etl_dq_results`.
+- Additional work is needed to ensure all six dimensions are consistently recorded in the ETL scorecard.
+
+### Limitations
+- Further validation is required to ensure Critical failures are quarantined and Warning rows are loaded and logged consistently across both pipelines.
+- Repeated test runs can create multiple scorecard entries; results should be reviewed by `run_id`.
