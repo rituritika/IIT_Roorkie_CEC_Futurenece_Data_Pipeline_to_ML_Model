@@ -82,3 +82,9 @@ The profiling results will be used to define validation, quarantine, and reconci
 - Review mismatched payments, including pending or failed payments.
 - Further validate rerun idempotency and incremental processing.
 - Validate the Airflow DAG in the Airflow environment.
+
+
+### orders_2026-10-01_increment.csv
+
+- Validate whether order IDs already exist in orders.csv — Uniqueness — Warning
+- Confirm incremental records are processed as updates or inserts based on order_id — Consistency — High
