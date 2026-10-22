@@ -40,6 +40,23 @@ def nammamart_elt_ritika():
                     sources.append("orders_2026-10-01_increment.csv")
 
                 for source in sources:
+                    raw_table = f"raw_{table}"
+                    already_loaded = con.execute(
+                        f"SELECT COUNT(*) FROM information_schema.tables "
+                        f"WHERE table_name = ?",
+                        [raw_table],
+                    ).fetchone()[0]
+
+                    if already_loaded:
+                        loaded_count = con.execute(
+                            f"SELECT COUNT(*) FROM {raw_table} "
+                            f"WHERE _source_file = ?",
+                            [source],
+                        ).fetchone()[0]
+                        if loaded_count > 0:
+                            print(source, "already loaded; skipping")
+                            continue
+
                     with (DATA / source).open(
                         encoding="utf-8-sig", newline=""
                     ) as f:
