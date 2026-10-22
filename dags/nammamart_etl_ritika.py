@@ -1,6 +1,7 @@
 
 from datetime import datetime, timedelta
 from pathlib import Path
+import pendulum
 
 import duckdb
 import pandas as pd
@@ -336,7 +337,7 @@ def run_etl():
 @dag(
     dag_id="nammamart_etl_ritika",
     schedule="0 9 * * 1-6",
-    start_date=datetime(2026, 10, 1),
+    start_date=pendulum.datetime(2026, 10, 1, tz="Asia/Kolkata"),
     catchup=False,
     default_args={
         "owner": "ritika",
