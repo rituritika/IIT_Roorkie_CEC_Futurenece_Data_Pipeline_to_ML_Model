@@ -42,7 +42,9 @@ WHEN MATCHED THEN UPDATE SET
  net_revenue=s.net_revenue, within_15_min=s.within_15_min,
  dq_status=s.dq_status, failure_reason=s.failure_reason
 WHEN NOT MATCHED THEN INSERT BY NAME;
-UPDATE stg_orders SET gross_margin = order_amount -
- COALESCE(quantity,0) * COALESCE(unit_price,0) *
- (1-COALESCE(discount_pct,0)/100) * 0
-WHERE gross_margin IS NULL;
+UPDATE stg_orders o
+SET gross_margin = o.net_revenue -
+    COALESCE(p.cost_price, 0) * COALESCE(o.quantity, 0)
+FROM stg_products p
+WHERE o.product_id = p.product_id
+  AND o.gross_margin IS NULL;
