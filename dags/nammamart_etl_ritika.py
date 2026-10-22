@@ -118,8 +118,14 @@ def run_etl(
         "invalid_order_timestamp": orders["order_ts"].isna(),
         "invalid_quantity": ~orders["quantity"].gt(0),
         "invalid_unit_price": ~orders["unit_price"].ge(0),
-        "invalid_discount": ~orders["discount_pct"].between(0, 100),
+         "invalid_discount": ~orders["discount_pct"].between(0, 100),
         "invalid_order_amount": ~orders["order_amount"].ge(0),
+        "duplicate_order_id": orders["order_id"].duplicated(keep="first"),
+        "future_order_timestamp": orders["order_ts"] > pd.Timestamp.now(),
+        "invalid_order_status": ~orders["order_status"].isin([
+            "PLACED", "CONFIRMED", "PREPARING",
+            "OUT_FOR_DELIVERY", "DELIVERED", "CANCELLED"
+        ]),
     }
 
     failed_checks = pd.DataFrame(checks, index=orders.index)

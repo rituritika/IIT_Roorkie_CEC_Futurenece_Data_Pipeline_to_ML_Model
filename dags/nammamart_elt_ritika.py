@@ -105,6 +105,42 @@ def nammamart_elt_ritika():
             ]:
                 con.execute((SQL / name).read_text())
                 print("Executed", name)
+                            # Run Part D data-quality checks
+            dq_sql = (SQL / "dq_checks.sql").read_text()
+            dq_results = con.execute(dq_sql).fetchall()
+
+            run_id = str(get_current_context()["run_id"])
+
+            con.execute("""
+                CREATE TABLE IF NOT EXISTS dq_results (
+                    run_id VARCHAR,
+                    dag_id VARCHAR,
+                    check_name VARCHAR,
+                    dimension VARCHAR,
+                    severity VARCHAR,
+                    rows_checked INTEGER,
+                    rows_failed INTEGER,
+                    status VARCHAR,
+                    checked_at TIMESTAMPTZ
+                )
+            """)
+
+            for check_name, dimension, severity, rows_checked, rows_failed in dq_results:
+                con.execute("""
+                    INSERT INTO dq_results
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                """, [
+                    run_id,
+                    "nammamart_elt_ritika",
+                    check_name,
+                    dimension,
+                    severity,
+                    rows_checked,
+                    rows_failed,
+                    "PASS" if rows_failed == 0 else "FAIL",
+                ])
+
+            print("Recorded", len(dq_results), "data-quality checks")
         finally:
             con.close()
 
