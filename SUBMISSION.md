@@ -174,3 +174,71 @@ In ETL, an invalid order is written to a run-specific quarantine CSV with its re
 
 ### 9. Change History
 If an order was DELIVERED on 3 September and changed to RETURNED on 1 October, an incremental upsert may replace the current order status and alter the current September revenue view, depending on the mart's status and revenue rules. Finance usually needs both the original September close and the corrected current view. Preserve both by storing effective-dated order history or immutable monthly snapshots, recording the change timestamp and run ID rather than overwriting the only historical version.
+
+
+## Part F: Observability Tests
+
+### 1. Run Audit
+
+The pipeline run audit should maintain one record per DAG run in the `pipeline_runs` table with the following fields:
+
+- `run_id`
+- `dag_id`
+- `start_time`
+- `end_time`
+- `rows_extracted`
+- `rows_loaded`
+- `rows_quarantined`
+- `status`
+
+A final audit task using `trigger_rule="all_done"` ensures that audit recording is attempted even when an upstream task fails. This provides visibility into successful and failed pipeline executions. The audit table and final task must be verified in both DAGs before claiming full implementation.
+
+### 2. Observability Experiments
+
+The following table defines the expected behaviour and the evidence to inspect for each experiment. Actual observations should be recorded from the Airflow UI, task logs, and database queries after running the tests.
+
+| # | Experiment | Expected result | Evidence to inspect |
+|---|---|---|---|
+| 1 | Happy path | Pipeline completes successfully, with extracted, loaded and quarantined row counts recorded. Independent tasks may execute in parallel. | Airflow Graph/Grid, task durations, audit table |
+| 2 | Re-run (idempotency) | Re-running the DAG should not create duplicate fact records. ELT raw-table growth depends on the loading strategy. | Fact counts and raw-table counts before and after the run |
+| 3 | Incremental load | New records are inserted and corrected orders are updated without duplicating order IDs. | Increment-file results, fact table, insert/update counts |
+| 4 | Missing source file | The affected task retries according to its configuration and eventually fails if the file remains unavailable. Dependent tasks may become `upstream_failed`. | Airflow task states, retry logs and failure messages |
+| 5 | New bad data | Null customer, negative quantity, unknown store, invalid status and future timestamp should be identified by the applicable validation rules. | Quarantine table, rejection reasons and `dq_results` |
+| 6 | Schema change | Renaming `order_amount` to `total` should produce a clear schema or transformation error unless the pipeline explicitly supports the changed schema. | Failed task logs and source schema |
+| 7 | Volume anomaly | A run with 50 orders should trigger a warning if the baseline is more than 500 orders and the 90% drop check is implemented. | Volume-check log or quality result |
+| 8 | Distribution drift | Multiplying a store's `unit_price` by 100 should be detected if a distribution or anomaly check is configured. The affected mart metrics should be compared before and after. | Store-level mart metrics and quality results |
+| 9 | Freshness | Orders whose latest timestamp is 30 days old should trigger a warning if the configured timeliness threshold is exceeded. | Latest `order_ts`, task logs and `dq_results` |
+| 10 | Recovery | Clearing a failed task should rerun the selected task and the necessary downstream tasks, while completed upstream tasks generally remain completed unless also cleared. | Airflow Grid and task logs |
+
+**Experiment recording format**
+
+For each experiment, on both ETL and ELT, record:
+
+- **Expected:** The intended pipeline behaviour.
+- **Observed:** The actual result, including row counts, task states and error messages.
+- **Where I saw it:** Airflow UI, task log, database table or SQL query.
+- **What I would change:** The improvement required to make the pipeline more reliable.
+
+Experiments that have not been executed should be marked **Not tested**. Expected results are not evidence that a test passed.
+
+### 3. Five Pillars of Data Observability
+
+| Pillar | Application to NammaMart | Assessment |
+|---|---|---|
+| Freshness | Monitor the latest order timestamp and time since the last successful pipeline run. | Partially covered by the timeliness check; threshold-based alerts require verification. |
+| Volume | Track extracted, loaded and quarantined row counts and detect sudden drops. | Requires a baseline comparison and a volume alert. |
+| Schema | Detect missing or renamed columns and incompatible data types. | Must be verified through the schema-change experiment. |
+| Distribution | Monitor changes in unit prices, quantities, order statuses and store-level metrics. | Requires explicit distribution checks and thresholds. |
+| Lineage | Trace source files through staging and transformations into the final marts. | Supported by pipeline documentation; run-level lineage would benefit from recorded run IDs and source references. |
+
+### 4. Conclusion
+
+The existing data-quality checks provide a foundation for pipeline observability. Freshness, volume, schema and distribution monitoring should be validated through controlled experiments and recorded evidence. Distribution is a likely area for improvement because a large price change may not be detected without explicit anomaly checks. The run audit should be verified for both successful and failed runs so that pipeline health can be assessed without manually inspecting the code.
+
+### 5. Limitations and Next Steps
+
+1. Verify that both DAGs write one audit row per run to `pipeline_runs`.
+2. Add and validate a volume-drop check against a known-good baseline.
+3. Run each experiment against both DAGs and record actual outcomes.
+4. Confirm that invalid records are quarantined with specific rejection reasons.
+5. Verify that recovery, retries and failure states are visible through Airflow and the audit table.
