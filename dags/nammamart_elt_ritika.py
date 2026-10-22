@@ -3,6 +3,8 @@ from pathlib import Path
 from datetime import datetime, timezone
 import csv
 import duckdb
+import pendulum
+from datetime import timedelta
 
 from airflow.decorators import dag, task
 from airflow.operators.python import get_current_context
@@ -22,9 +24,14 @@ FILES = {
 
 @dag(
     dag_id="nammamart_elt_ritika",
-    start_date=datetime(2026, 10, 1, tzinfo=timezone.utc),
-    schedule=None,
+    schedule="0 9 * * 1-6",
+    start_date=pendulum.datetime(2026, 10, 1, tz="Asia/Kolkata"),
     catchup=False,
+    default_args={
+        "retries": 2,
+        "retry_delay": timedelta(minutes=5),
+        "execution_timeout": timedelta(minutes=20),
+    },
     tags=["nammamart", "elt"],
 )
 def nammamart_elt_ritika():

@@ -6,6 +6,7 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 import pendulum
+from datetime import timedelta
 
 from airflow.sdk import dag, task
 
@@ -414,7 +415,7 @@ def build_reports():
     default_args={
         "owner": "ritika",
         "retries": 2,
-        "retry_delay": timedelta(minutes=2),
+        "retry_delay": timedelta(minutes=5),
         "execution_timeout": timedelta(minutes=20),
     },
     tags=["nammamart", "etl", "assignment"],

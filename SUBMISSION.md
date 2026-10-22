@@ -95,3 +95,18 @@ For September 2026, the ELT pipeline processed 21 more distinct orders and ₹48
 The pipelines do not yet produce identical results. The exact cause has not been confirmed. Potential causes include differences in data-quality filtering, incremental updates, and transformation logic. Further validation is required.
 
 The ELT pipeline preserves source records in the raw layer and applies deduplication and data-quality checks in the staging layer before building the marts.
+
+
+## Part C: Schedule Both DAGs for 9:00 AM IST
+
+**Cron expression:** `0 9 * * 1-6`
+
+**UTC time:** 03:30 AM UTC, equivalent to 9:00 AM IST.
+
+**If start_date were left in UTC:** A 9:00 AM UTC schedule would run at 2:30 PM IST, not 9:00 AM IST.
+
+**If the laptop or Docker is off:** The scheduled run cannot execute while the local Airflow scheduler is unavailable. With `catchup=False`, missed runs are not automatically backfilled after restart. A continuously running Airflow deployment is needed to meet the SLA reliably.
+
+**Why catchup=False:** It prevents Airflow from automatically creating historical runs for missed schedule intervals.
+
+**Retries and timeout:** Both DAGs use 2 retries, a 5-minute retry delay, and a 20-minute execution timeout.
