@@ -13,3 +13,9 @@ airflow.db
 .astro/*.local.yml
 .astro/*.local.yaml
 test_api.py 
+# Generated DuckDB databases
+include/*.duckdb
+include/*.duckdb.wal
+
+# Generated quarantine output
+include/quarantine/

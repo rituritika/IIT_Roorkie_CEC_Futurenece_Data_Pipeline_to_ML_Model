@@ -1,0 +1,84 @@
+# NammaMart ETL & ELT Pipeline Assignment
+
+## Part 0: Discovery and Data Profiling
+
+### Three Questions for the Client
+
+1. **Negative quantities:** Are negative or zero quantities genuine returns or cancellations, or 
+are they data-entry errors that should be rejected?
+
+2. **Order and payment reconciliation:** How should we handle orders with missing payments, 
+payments that do not match the order amount, or multiple payment records for one order?
+
+3. **Late status corrections:** If an order changes from DELIVERED to RETURNED in the incremental file,
+ should historical revenue be recalculated, or should both the original and corrected versions be retained for audit purposes?
+
+
+## Data Issues Log
+
+### orders.csv
+- 18 order amount mismatches — Accuracy — Critical
+- 10 non-positive quantities — Validity — Critical
+- 9 unmatched product references — Referential integrity — Critical
+- 5 unmatched store references — Referential integrity — Critical
+- 5 invalid order statuses — Validity — Critical
+- 8 delivered orders missing delivery time — Completeness — Critical
+
+### payments.csv
+- 8 unmatched order references — Referential integrity — Critical
+- 301 missing gateway references — Completeness — Warning
+
+### customers.csv
+- 4 missing email values — Completeness — Warning
+
+### products.csv
+- 3 missing category values — Completeness — Critical
+
+### stores.csv
+- 1 missing zone value — Completeness — Critical
+
+### orders_2026-10-01_increment.csv
+- 10 order IDs already exist in the base orders file — Uniqueness and consistency — Warning
+
+
+
+### Data Profiling Evidence
+
+The detailed profiling results are saved in `include/data_profiling_report.txt`.
+
+The report includes:
+- Row counts and column counts for all six CSV files.
+- Null values and duplicate-row checks.
+- Referential integrity checks across related datasets.
+- Business rule validation, including order amounts, quantities, statuses, and delivery times.
+- Incremental file analysis, including existing order IDs.
+
+The profiling results will be used to define validation, quarantine, and reconciliation rules for the ETL and ELT pipelines.
+
+
+
+
+## Part A — ETL Implementation and Test Results
+
+### Implemented
+- Extracted the five base CSV files and the incremental orders file.
+- Validated required fields, timestamps, and numeric business rules.
+- Quarantined rejected orders with failure reasons and run IDs.
+- Removed duplicate order records, with incremental records taking precedence.
+- Masked customer email addresses and phone numbers in the customer dimension.
+- Joined orders with customer, product, and store dimensions using left joins.
+- Derived order date, net revenue, gross margin, and delivery SLA indicator.
+- Loaded fact, dimension, reporting, data-quality, and payment reconciliation tables into DuckDB.
+
+### Latest observed results
+- Orders processed: 2,513
+- Orders quarantined: 37
+- Fact table rows: 2,513
+- Orders with missing dimension details: 14
+- Payment reconciliation: 2,163 MATCH; 350 MISMATCH
+
+### Limitations and follow-up
+- Investigate missing product and store references.
+- Review mismatched payments, including pending or failed payments.
+- Further validate rerun idempotency and incremental processing.
+- Validate the Airflow DAG in the Airflow environment.

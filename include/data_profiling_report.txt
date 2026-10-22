@@ -1,0 +1,159 @@
+NAMMAMART - PART 0 DATA PROFILING REPORT
+=======================================================
+
+FILE: customers.csv
+ROWS: 405 | COLUMNS: 10
+NULLS PER COLUMN:
+customer_id     0
+full_name       0
+email           4
+phone           0
+city            6
+area            0
+pincode         0
+signup_date     0
+loyalty_tier    0
+is_active       0
+EXACT DUPLICATE ROWS: 0
+DUPLICATE KEY customer_id: 5
+phone MIN=9804341 MAX=9999393305
+signup_date DATE MIN=2024-06-01 00:00:00 MAX=2027-01-05 00:00:00
+loyalty_tier DISTINCT: {'Bronze': 185, 'Silver': 133, 'Gold': 54, 'Platinum': 25, 'BRONZE': 3, 'bronze': 3, 'SILVER': 2}
+
+FILE: orders.csv
+ROWS: 2412 | COLUMNS: 13
+NULLS PER COLUMN:
+order_id              0
+order_ts              2
+customer_id          18
+store_id              0
+product_id            0
+quantity              0
+unit_price            0
+discount_pct          0
+order_amount          0
+payment_mode          0
+order_status          0
+channel               0
+delivery_minutes    164
+EXACT DUPLICATE ROWS: 12
+DUPLICATE KEY order_id: 12
+DUPLICATE KEY customer_id: 2011
+DUPLICATE KEY store_id: 2394
+DUPLICATE KEY product_id: 2253
+quantity MIN=-3 MAX=5
+unit_price MIN=10.0 MAX=883.0
+discount_pct MIN=0 MAX=250
+order_amount MIN=-1593.0 MAX=9576.0
+delivery_minutes MIN=8.0 MAX=1440.0
+order_ts DATE MIN=2026-09-01 06:30:15 MAX=2027-01-01 09:00:00
+order_status DISTINCT: {'DELIVERED': 2182, 'CANCELLED': 156, 'RETURNED': 69, 'Pending??': 3, 'delivered': 2}
+payment_mode DISTINCT: {'UPI': 1329, 'Card': 493, 'Cash on Delivery': 326, 'Wallet': 254, 'upi': 4, 'Cashh': 2, 'UPI ': 2, 'CARD': 1, 'cod': 1}
+
+FILE: orders_2026-10-01_increment.csv
+ROWS: 160 | COLUMNS: 13
+NULLS PER COLUMN:
+order_id            0
+order_ts            0
+customer_id         0
+store_id            0
+product_id          0
+quantity            0
+unit_price          0
+discount_pct        0
+order_amount        0
+payment_mode        0
+order_status        0
+channel             0
+delivery_minutes    0
+EXACT DUPLICATE ROWS: 0
+DUPLICATE KEY order_id: 0
+DUPLICATE KEY customer_id: 17
+DUPLICATE KEY store_id: 145
+DUPLICATE KEY product_id: 62
+quantity MIN=1 MAX=4
+unit_price MIN=10.0 MAX=883.0
+discount_pct MIN=0 MAX=20
+order_amount MIN=11.0 MAX=2052.0
+delivery_minutes MIN=8 MAX=34
+order_ts DATE MIN=2026-09-01 09:38:13 MAX=2026-10-01 22:33:00
+order_status DISTINCT: {'DELIVERED': 150, 'RETURNED': 10}
+payment_mode DISTINCT: {'UPI': 46, 'Card': 44, 'Cash on Delivery': 40, 'Wallet': 30}
+
+FILE: payments.csv
+ROWS: 2228 | COLUMNS: 7
+NULLS PER COLUMN:
+payment_id          0
+order_id            0
+payment_ts          0
+payment_mode        0
+amount_paid         0
+payment_status      0
+gateway_ref       301
+EXACT DUPLICATE ROWS: 4
+DUPLICATE KEY payment_id: 4
+DUPLICATE KEY order_id: 4
+amount_paid MIN=-1593.0 MAX=9576.0
+payment_ts DATE MIN=2026-09-01 06:30:24 MAX=2027-01-01 09:01:46
+payment_mode DISTINCT: {'UPI': 1238, 'Card': 445, 'Cash on Delivery': 301, 'Wallet': 234, 'upi': 4, 'UPI ': 2, 'Cashh': 2, 'cod': 1, 'CARD': 1}
+
+FILE: products.csv
+ROWS: 152 | COLUMNS: 10
+NULLS PER COLUMN:
+product_id       0
+product_name     0
+category         3
+sub_category     0
+brand            0
+mrp              0
+cost_price       0
+unit             0
+is_perishable    0
+launch_date      0
+EXACT DUPLICATE ROWS: 0
+DUPLICATE KEY product_id: 2
+mrp MIN=-203.0 MAX=883.0
+cost_price MIN=6.79 MAX=631.79
+launch_date DATE MIN=2023-01-03 00:00:00 MAX=2025-09-20 00:00:00
+category DISTINCT: {'Dairy & Bakery': 26, 'Household': 26, 'Fruits & Vegetables': 25, 'Snacks & Beverages': 25, 'Personal Care': 25, 'Staples': 22, nan: 3}
+
+FILE: stores.csv
+ROWS: 15 | COLUMNS: 8
+NULLS PER COLUMN:
+store_id                   0
+store_name                 0
+zone                       1
+area                       0
+pincode                    0
+open_date                  0
+manager_name               0
+capacity_orders_per_day    0
+EXACT DUPLICATE ROWS: 0
+DUPLICATE KEY store_id: 0
+pincode MIN=560003 MAX=560102
+capacity_orders_per_day MIN=0 MAX=600
+open_date DATE MIN=2024-02-14 00:00:00 MAX=2025-07-28 00:00:00
+zone DISTINCT: {'East': 4, 'West': 4, 'North': 3, 'South': 3, nan: 1}
+
+
+REFERENTIAL INTEGRITY
+orders.customer_id: unmatched references = 0
+orders.product_id: unmatched references = 9
+orders.store_id: unmatched references = 5
+payments.order_id: unmatched references = 8
+
+
+BUSINESS RULE CHECKS
+Order amount mismatches: 18
+Non-positive quantities: 10
+Negative unit prices: 0
+Discount outside 0-100: 3
+Invalid order statuses: 5
+Delivered orders missing delivery time: 8
+Delivered times outside 8-35 minutes: 6
+Invalid payment modes in orders: 10
+
+
+INCREMENTAL FILE
+Increment rows: 160
+IDs already in base orders: 10
