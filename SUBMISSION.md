@@ -128,3 +128,49 @@ Implemented data-quality checks for six dimensions: completeness, uniqueness, va
 ### Limitations
 - Further validation is required to ensure Critical failures are quarantined and Warning rows are loaded and logged consistently across both pipelines.
 - Repeated test runs can create multiple scorecard entries; results should be reviewed by `run_id`.
+## Part E: Data Governance
+
+### 1. Ownership
+The Operations team owns orders and stores; Finance owns payments and revenue reconciliation; Customer Management owns customer data; and Merchandising owns product data. The Data Engineering team owns staging, warehouse and mart tables. The Operations owner and Data Governance team should approve changes to quality rules such as the 120-minute delivery limit, with Finance consulted when revenue reporting is affected.
+
+### 2. Data Dictionary
+
+| Table | Column | Type | Meaning / Source | Allowed values | PII |
+|---|---|---|---|---|---|
+| Fact: orders | order_id | VARCHAR | Unique order identifier from orders CSV | Non-empty, unique | No |
+| Fact: orders | customer_id | VARCHAR | Customer reference from orders CSV | Must exist in customers | No, by itself |
+| Fact: orders | order_ts | TIMESTAMP | Order creation time from orders CSV | Valid timestamp; not future-dated | No |
+| Fact: orders | quantity | INTEGER | Units ordered from orders CSV | Greater than zero | No |
+| Fact: orders | net_revenue | DECIMAL/DOUBLE | Revenue after discount, derived from order data | Non-negative | No |
+| Dim: customers | customer_id | VARCHAR | Customer key from customers CSV | Unique | No, by itself |
+| Dim: customers | customer_name | VARCHAR | Customer's name from customers CSV | Non-empty | Yes |
+| Dim: customers | email / phone | VARCHAR | Customer contact details from customers CSV | Valid email / phone format | Yes |
+| Dim: products | product_id | VARCHAR | Product key from products CSV | Unique | No |
+| Dim: products | category | VARCHAR | Product category from products CSV | Non-empty | No |
+| Dim: stores | store_id | VARCHAR | Store key from stores CSV | Unique | No |
+| Dim: stores | store_name / zone | VARCHAR | Store name and service zone from stores CSV | Non-empty | No |
+| Fact: payments | payment_id | VARCHAR | Payment transaction key from payments CSV | Unique | No |
+| Fact: payments | amount_paid | DECIMAL/DOUBLE | Payment amount from payments CSV | Non-negative | No |
+
+The actual physical types may differ between raw, staging and mart layers because raw ELT columns are retained as text and staging applies type conversions.
+
+### 3. Lineage
+For `mart_daily_store_kpis`, a measure such as total net revenue is derived from accepted order records, grouped by order date and store, and ultimately originates from `orders.csv` and its order rows. ETL lineage can be traced through processed and quarantined records; ELT lineage can be traced through raw source metadata (`_source_file`, `_run_id`) and staging transformations. ELT is generally easier for source-level tracing because raw records are preserved, but exact row-level lineage requires retaining a source row identifier or equivalent mapping.
+
+### 4. Personal Data
+Customer name, email, phone number and any address or other identifying contact details in the customer dataset are personal data. The pipeline should mask contact details in analytical staging/mart layers while retaining controlled raw data for authorised operational use; masking preserves join and audit utility without exposing the original value broadly. India's Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025 establish obligations around lawful processing, notice/consent where applicable, safeguards, purpose limitation, data-principal rights and retention; applicable provisions have phased commencement dates. [Official Rules](https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf)
+
+### 5. Access Control
+Only authorised ingestion and platform administrators should access raw data; data engineers may access staging with appropriate controls; business users should primarily access approved marts. Finance should access payment reconciliation and revenue marts, while customer operations may need customer details for legitimate service purposes. Raw customer phone numbers should be restricted to authorised personnel who require them for their work, with access logged and reviewed.
+
+### 6. Retention
+A proposed policy is to retain raw operational data for 90 days, quarantined records for 30 days after investigation, and masked analytical customer data for 12 months, unless a legal, contractual or business requirement specifies otherwise. These are proposed policy values, not existing implemented controls. After the approved retention period, data should be securely deleted or irreversibly anonymised, subject to legal holds and audit requirements.
+
+### 7. Secrets
+Credentials and webhook URLs such as `SLACK_WEBHOOK_URL` should be stored in Airflow Connections, a secrets manager or environment variables supplied securely at runtime. They must never be hard-coded in DAG files or committed to GitHub because repository users could expose them and use them to access systems or send unauthorised messages. Secrets should be rotated if accidentally exposed.
+
+### 8. Audit
+In ETL, an invalid order is written to a run-specific quarantine CSV with its received fields, run ID and failure reason, and rejected rows are excluded from the processed fact/revenue output. In ELT, the original row remains in the raw table, while staging records its data-quality status and failure reason; marts must filter out failed records. For a finance audit, retrieve one actual rejected order, show its original CSV/raw row and the exact rule it violated, then verify that its order ID is absent from the accepted revenue calculation. The audit should be demonstrated with an actual order ID from the current run.
+
+### 9. Change History
+If an order was DELIVERED on 3 September and changed to RETURNED on 1 October, an incremental upsert may replace the current order status and alter the current September revenue view, depending on the mart's status and revenue rules. Finance usually needs both the original September close and the corrected current view. Preserve both by storing effective-dated order history or immutable monthly snapshots, recording the change timestamp and run ID rather than overwriting the only historical version.
