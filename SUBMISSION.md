@@ -110,3 +110,21 @@ The ELT pipeline preserves source records in the raw layer and applies deduplica
 **Why catchup=False:** It prevents Airflow from automatically creating historical runs for missed schedule intervals.
 
 **Retries and timeout:** Both DAGs use 2 retries, a 5-minute retry delay, and a 20-minute execution timeout.
+## Part D: Data Quality Dimensions
+
+Implemented data-quality checks for six dimensions: completeness, uniqueness, validity, accuracy, consistency, and timeliness.
+
+### ELT Pipeline
+- Implemented SQL-based checks in `include/sql/dq_checks.sql`.
+- Recorded check results in `dq_results` with run ID, DAG ID, check name, dimension, severity, rows checked, rows failed, status, and timestamp.
+- Tested the ELT DAG successfully.
+- Failed checks are recorded in the scorecard for review.
+
+### ETL Pipeline
+- Implemented Python-based order validation and quarantine of rejected orders.
+- ETL quality results are recorded in `etl_dq_results`.
+- Additional work is needed to ensure all six dimensions are consistently recorded in the ETL scorecard.
+
+### Limitations
+- Further validation is required to ensure Critical failures are quarantined and Warning rows are loaded and logged consistently across both pipelines.
+- Repeated test runs can create multiple scorecard entries; results should be reviewed by `run_id`.
