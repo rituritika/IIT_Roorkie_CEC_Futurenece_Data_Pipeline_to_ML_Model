@@ -10,7 +10,7 @@ from pathlib import Path
 import requests
 
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-20b"
 BATCH_SIZE = 10
 
 
@@ -118,8 +118,7 @@ def score_lead(lead):
     else:
         decision = "REJECTED"
 
-    if age is not None and age > 365 and decision == "QUALIFIED":
-        decision = "REVIEW"
+    
 
     priority = (
         "HIGH" if decision == "QUALIFIED" and score >= 8
@@ -172,7 +171,7 @@ def llm_batch(batch, api_key):
             return json.loads(content)
         except (requests.RequestException, ValueError, KeyError) as exc:
             if attempt < 2:
-                time.sleep(2 ** attempt)
+                time.sleep(10*(attempt+1))
             else:
                 print("LLM batch failed; using local reasoning:", exc)
     return []
