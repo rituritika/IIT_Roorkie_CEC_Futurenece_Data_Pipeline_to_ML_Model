@@ -20,8 +20,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": "Hi Alice, thanks for reaching out about a demo at CloudScale AI. Our SaaS solutions are designed to help companies like yours scale efficiently and drive innovation. I\u2019d love to schedule a quick call to discuss how we can support your growth goals."
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Alice,\n\nThank you for requesting a demo of CloudScale AI. I\u2019d love to discuss how our SaaS solutions can help streamline your operations and drive growth. Could we schedule a brief call next week to explore your needs?\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 12,
@@ -34,8 +34,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": "Hi Leon,\n\nThank you for the referral! I see FinTech Startup is growing rapidly, and I believe our platform can support your scaling efforts by enhancing payment workflows and compliance checks. Could we schedule a quick chat next week?\n\nCheers,\n[Your Name]"
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Leon, thanks for the referral and your interest in FinTech. I'd like to explore how we can help your startup scale its operations and accelerate growth."
     },
     {
       "lead_id": 14,
@@ -48,8 +48,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1020,
-      "outreach_message": "Hi Nathan,\n\nThanks for requesting a demo of our software solutions. I\u2019d love to walk you through how Enterprise Solutions Corp can benefit from our advanced analytics and automation tools. When would be a good time for a quick demo?\n\nRegards,\n[Your Name]"
+      "days_since_interaction": 1021,
+      "outreach_message": "Hi Nathan, thanks for requesting a demo from Enterprise Solutions Corp. Let's schedule a time to show how our software can streamline your processes and drive measurable results."
     },
     {
       "lead_id": 30,
@@ -62,8 +62,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": "Hi Derek, thanks for the demo request. Our platform can help your cloud infrastructure team optimize resource allocation and improve operational efficiency."
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Derek,\n\nThank you for requesting a demo for your cloud infrastructure. Given the high priority of your project, I\u2019d like to arrange a personalized walkthrough at your earliest convenience. Please let me know a time that works for you.\n\nSincerely,\n[Your Name]"
     },
     {
       "lead_id": 56,
@@ -76,8 +76,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
-      "outreach_message": "Hi Chloe, thanks for the referral and for showing interest in our supply chain analytics platform. I'd love to discuss how we can help streamline your operations. When would be a good time for a quick chat?"
+      "days_since_interaction": 1016,
+      "outreach_message": "Hi Chloe, thanks to the referral for Supply Chain Analytics. Our analytics suite aligns well with your focus on supply chain efficiency. Could we schedule a quick call to explore how we can support your growth?"
     },
     {
       "lead_id": 57,
@@ -90,8 +90,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": "Hi Dominic, thanks for requesting a demo. Our payment processing solution can help streamline transactions for FinTech companies like yours. Let's schedule a call to walk through the features."
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Dominic, thanks for your interest in a demo of our payment processing solutions. I think our platform could enhance Payment Processing's transaction speed and security. Let's find a time to dive deeper."
     },
     {
       "lead_id": 59,
@@ -104,8 +104,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": "Hi Franklin, it was great speaking with you about your accounting software needs. Our platform can help automate bookkeeping and improve reporting. Can we set up a follow-up to discuss next steps?"
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Franklin, following our recent conversation, I wanted to share how our accounting automation can benefit Accounting Software. Could we arrange a brief call to discuss integration options?"
     },
     {
       "lead_id": 63,
@@ -118,8 +118,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1022,
-      "outreach_message": "Hi Jerome, thanks for requesting a demo. Our platform streamlines logistics workflows and could help your software company reduce costs. Let's schedule a quick call."
+      "days_since_interaction": 1023,
+      "outreach_message": "Hi Jerome, thank you for requesting a demo of our logistics optimization platform. I'd be happy to walk you through how it can help Logistics Optimization improve efficiency and reduce costs. When can we schedule a brief session?"
     },
     {
       "lead_id": 5,
@@ -132,8 +132,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1084,
-      "outreach_message": "Hi Emma, thanks for your interest in RetailWorks Solutions. Our platform can streamline your retail operations and enhance customer experience. Let\u2019s set up a brief call to explore how we can help you achieve your goals."
+      "days_since_interaction": 1085,
+      "outreach_message": "Hi Emma,\n\nThanks for reaching out about a demo for RetailWorks Solutions. I\u2019d be delighted to show how our platform can support your retail operations and enhance customer experience. Could we set up a quick call next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 6,
@@ -146,8 +146,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": "Hi Frank, thanks for connecting after your sales call at Healthcare Systems Ltd. Our solutions are tailored to improve patient data management and streamline clinical workflows. I\u2019d love to discuss how we can support your team\u2019s efficiency."
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Frank,\n\nFollowing our recent sales call, I\u2019d like to schedule a demo to demonstrate how our solution can benefit Healthcare Systems Ltd. When would be a convenient time for you next week?\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 8,
@@ -160,8 +160,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1019,
-      "outreach_message": "Hi Henry, thanks for downloading content from EdTech Innovations. Our platform can boost student engagement and streamline curriculum delivery. Let\u2019s chat about how we can help you scale your educational impact."
+      "days_since_interaction": 1020,
+      "outreach_message": "Hi Henry,\n\nThank you for downloading our content on EdTech Innovations. I\u2019d love to discuss how our platform can enhance your educational technology offerings. Could we arrange a brief call next week?\n\nCheers,\n[Your Name]"
     },
     {
       "lead_id": 10,
@@ -174,8 +174,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": "Hi Jack, thanks for your demo request at Digital Marketing Agency. Our tools can elevate your marketing campaigns and drive measurable results. I\u2019d be happy to walk you through a personalized demo."
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Jack,\n\nThanks for your demo request for Digital Marketing Agency. I\u2019d be excited to show how our solution can support your marketing initiatives. When would be a good time for a quick call next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 11,
@@ -188,8 +188,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1049,
-      "outreach_message": "Hi Karen,\n\nI noticed you reached out via a sales call last year. I\u2019d love to reconnect and discuss how our solutions can help InsurancePro streamline claims processing and improve customer satisfaction. Let me know a convenient time for a brief call.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1050,
+      "outreach_message": "Hi Karen, I noticed your recent sales call and the interest from InsurancePro. I'd love to discuss how our solutions can support your insurance operations and help you achieve greater efficiency."
     },
     {
       "lead_id": 16,
@@ -202,8 +202,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1069,
-      "outreach_message": "Hi Pamela,\n\nI appreciate your interest in our solutions during our last sales call. I\u2019d like to explore how Pharma Research Inc can leverage our platform to accelerate research timelines and regulatory compliance. Could we set up a brief call?\n\nBest,\n[Your Name]"
+      "days_since_interaction": 1070,
+      "outreach_message": "Hi Pamela, following our recent sales call at Pharma Research Inc, I\u2019d like to discuss how our platform can accelerate your research and bring new insights faster."
     },
     {
       "lead_id": 19,
@@ -216,8 +216,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1024,
-      "outreach_message": "Hi Samuel,\n\nThanks for the referral! Cybersecurity Startup\u2019s focus on threat detection aligns well with our security analytics platform. I\u2019d love to discuss how we can help you enhance your threat intelligence capabilities. When might you have time for a quick chat?\n\nThanks,\n[Your Name]"
+      "days_since_interaction": 1025,
+      "outreach_message": "Hi Samuel, thanks for the referral and your interest in cybersecurity. I'd love to show how our solutions can strengthen your startup\u2019s security posture and protect critical assets."
     },
     {
       "lead_id": 20,
@@ -230,8 +230,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1107,
-      "outreach_message": "Hi Tina,\n\nThank you for requesting a demo of our energy solutions. I\u2019d be delighted to show how Energy Solutions can optimize your grid management and reduce operational costs. Could we schedule a brief demo next week?\n\nKind regards,\n[Your Name]"
+      "days_since_interaction": 1108,
+      "outreach_message": "Hi Tina, thanks for requesting a demo from Energy Solutions. Let's explore how our technology can power your energy initiatives and deliver sustainable results."
     },
     {
       "lead_id": 22,
@@ -244,8 +244,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1027,
-      "outreach_message": "Hi Victor, thanks for the call about your real estate platform. I'd love to discuss how our solution can streamline your listings and boost agent productivity."
+      "days_since_interaction": 1028,
+      "outreach_message": "Hi Victor,\n\nI hope you\u2019re doing well. I\u2019m following up on our recent sales call regarding your real\u2011estate platform. We\u2019re excited about the potential to help streamline your operations and would love to discuss how our solutions can support your growth. Let me know a convenient time for a quick chat.\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 25,
@@ -258,8 +258,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": "Hi Yuki, thanks for the referral. Our platform can help your travel tech company enhance booking experiences and improve customer satisfaction."
+      "days_since_interaction": 1030,
+      "outreach_message": "Hi Yuki,\n\nThank you for the referral and for showing interest in our travel\u2011tech solutions. I\u2019d love to explore how we can help your company enhance customer experience and operational efficiency. Could we schedule a brief call next week?\n\nWarm regards,\n[Your Name]"
     },
     {
       "lead_id": 26,
@@ -272,8 +272,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1059,
-      "outreach_message": "Hi Zara, thanks for requesting a demo. We can show how our tools support your institution's digital learning initiatives and streamline administrative workflows."
+      "days_since_interaction": 1060,
+      "outreach_message": "Hi Zara,\n\nThank you for requesting a demo for your education institution. We\u2019re eager to demonstrate how our platform can support your teaching and administrative needs. Please let me know a suitable time for a walkthrough.\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 28,
@@ -286,8 +286,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1064,
-      "outreach_message": "Hi Bella, following our recent call, I'd like to share how our solution can improve case management and reduce administrative overhead for your legal services firm."
+      "days_since_interaction": 1065,
+      "outreach_message": "Hi Bella,\n\nI\u2019m following up on our recent sales call about your legal services firm. We\u2019re confident our solutions can streamline your case management and improve client communication. Could we set up a quick call to discuss next steps?\n\nKind regards,\n[Your Name]"
     },
     {
       "lead_id": 31,
@@ -300,8 +300,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": "Hi Ethan, I noticed your company Mobile Development is a great fit for our solutions in the software space. Since we last connected on LinkedIn over a year ago, I'd love to catch up and discuss how we can help you accelerate your mobile projects. Let me know a convenient time for a quick call."
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Ethan, I noticed your company Mobile Development is a great fit for our solutions in the software space. Since we last connected via LinkedIn, I'd love to explore how we can help you accelerate your mobile projects. When would be a convenient time for a quick call?"
     },
     {
       "lead_id": 32,
@@ -314,8 +314,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1079,
-      "outreach_message": "Hi Fiona, it was great speaking with you during our recent sales call. Your telecom background at Telecommunications aligns well with our offerings. It's been over a year since we last touched base, and I'd like to explore how we can support your network expansion. When would be a good time for a brief discussion?"
+      "days_since_interaction": 1080,
+      "outreach_message": "Hi Fiona, thanks for the recent sales call. Your Telecom background at Telecommunications aligns well with our offerings. I'd like to discuss how we can support your network expansion. Are you available for a brief chat next week?"
     },
     {
       "lead_id": 35,
@@ -328,8 +328,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1017,
-      "outreach_message": "Hi Isabella, thanks for the referral and for connecting with us. Your role at Luxury Hotels in the hospitality sector is a perfect match for our services. It's been a while since we last spoke, and I'd love to discuss how we can enhance your guest experience through our solutions. Could we schedule a quick call?"
+      "days_since_interaction": 1018,
+      "outreach_message": "Hi Isabella, thanks for the referral. Luxury Hotels in the hospitality sector can benefit from our guest experience solutions. Let's schedule a call to explore potential collaboration."
     },
     {
       "lead_id": 36,
@@ -342,8 +342,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
-      "outreach_message": "Hi James, thank you for requesting a demo of our platform for Property Management. Since it's been over a year since we last interacted, I'd like to show you the latest features that can streamline your operations. When would be a convenient time for a short walkthrough?"
+      "days_since_interaction": 1016,
+      "outreach_message": "Hi James, thanks for requesting a demo. Property Management in Real Estate can streamline operations with our platform. Could we set up a quick walkthrough?"
     },
     {
       "lead_id": 38,
@@ -356,8 +356,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1023,
-      "outreach_message": "Hi Liam, it was a pleasure speaking with you during our recent sales call. Your venture capital focus at Venture Capital Fund aligns with our investment analytics solutions. It's been a while since we last connected, and I'd love to discuss how we can support your portfolio companies. Let me know a suitable time for a brief chat."
+      "days_since_interaction": 1024,
+      "outreach_message": "Hi Liam, following our recent sales call, I see your Venture Capital Fund could leverage our investment analytics tools. Let's discuss how we can add value. When works for you?"
     },
     {
       "lead_id": 39,
@@ -370,8 +370,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": "Hi Mona, thanks for the referral and for connecting with us. Your work at Blockchain Startup in the cryptocurrency space is an exciting fit for our blockchain analytics platform. It's been over a year since we last touched base, and I'd like to explore how we can help you scale your operations. When would be a good time for a quick call?"
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Mona, thanks for the referral. Your Blockchain Startup in Cryptocurrency is an exciting space. I'd love to share how our solutions can support your growth. Are you free for a brief call?"
     },
     {
       "lead_id": 41,
@@ -384,8 +384,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": "Hi Olivia,\n\nThank you for your demo request at Renewable Energy Corp. It\u2019s been a while since we last connected (over 3 years). I\u2019d love to discuss how our solutions can support your energy initiatives and help you achieve your sustainability goals.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Olivia,\n\nThank you for requesting a demo of our solution. We\u2019re excited to show you how it can help Renewable Energy Corp streamline operations and drive sustainability. Let me know a convenient time for a quick call to walk you through the key features.\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 43,
@@ -398,8 +398,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1095,
-      "outreach_message": "Hi Quincy,\n\nIt was great speaking with you about your Streaming Service during our sales call. Since it\u2019s been a year since we last touched base, I\u2019d like to revisit how our platform can enhance your media operations and drive viewer engagement.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1096,
+      "outreach_message": "Hi Quincy,\n\nIt was great speaking with you during our recent sales call. I\u2019d love to dive deeper into how our platform can enhance your streaming service\u2019s content delivery and user experience. When would be a good time for a follow\u2011up discussion?\n\nThanks,\n[Your Name]"
     },
     {
       "lead_id": 45,
@@ -412,8 +412,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1026,
-      "outreach_message": "Hi Steven,\n\nThank you for the referral and for your interest in Robotics Company. It\u2019s been a while since we last connected (just over 3 years). I\u2019d love to discuss how our solutions can help streamline your manufacturing processes.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1027,
+      "outreach_message": "Hi Steven,\n\nThanks for the referral! I\u2019m eager to show Robotics Company how our solution can boost manufacturing efficiency and reduce downtime. Could we schedule a brief demo next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 46,
@@ -426,8 +426,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1022,
-      "outreach_message": "Hi Sophia,\n\nThank you for your demo request at Wine Distribution. It\u2019s been more than 3 years since we last spoke. I\u2019d like to explore how our tools can support your retail operations and improve distribution efficiency.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1023,
+      "outreach_message": "Hi Sophia,\n\nThank you for your demo request. I\u2019d love to walk you through how our platform can help Wine Distribution optimize inventory and improve customer engagement. When would you be available for a quick call?\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 49,
@@ -440,8 +440,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1036,
-      "outreach_message": "Hi Victoria,\n\nIt was great connecting about Transportation Logistics during our sales call. Since it\u2019s been a while (over 3 years), I\u2019d love to revisit how our solutions can enhance your logistics workflow and reduce costs.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1037,
+      "outreach_message": "Hi Victoria,\n\nFollowing up on our recent sales call, I\u2019d like to demonstrate how our solution can streamline Transportation Logistics operations and enhance route planning. Could we set up a short meeting to explore this further?\n\nThank you,\n[Your Name]"
     },
     {
       "lead_id": 50,
@@ -454,8 +454,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": "Hi William,\n\nThank you for the referral and your interest in Pharmaceutical Distribution. It\u2019s been a while since we last connected (just over 3 years). I\u2019d like to discuss how our solutions can support your healthcare distribution needs.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1030,
+      "outreach_message": "Hi William,\n\nThanks for the referral! I\u2019m excited to discuss how our platform can support Pharmaceutical Distribution in improving supply chain visibility and compliance. When would be a convenient time for a brief call?\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 51,
@@ -468,8 +468,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1030,
-      "outreach_message": "Hi Xander, thanks for requesting a demo of our solution. At Virtual Reality Studios, we understand the unique challenges of the entertainment industry. I'd love to discuss how our platform can help you streamline your VR content pipeline. When would be a convenient time for a quick call?"
+      "days_since_interaction": 1031,
+      "outreach_message": "Hi Xander, thanks for requesting a demo of our VR solutions. I see Virtual Reality Studios is a great fit for our platform. I'd love to schedule a quick call to discuss how we can help you scale your immersive experiences. Let me know a convenient time."
     },
     {
       "lead_id": 54,
@@ -482,8 +482,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
-      "outreach_message": "Hi Amelia, it was great speaking with you about your cybersecurity consulting needs. Our solution can help your clients protect against evolving threats. Let's schedule a follow-up to dive deeper into how we can support your team."
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Amelia, following our recent call, I wanted to share how our security analytics can complement Cybersecurity Consulting's services. Could we set up a brief meeting to explore integration possibilities? Looking forward to your thoughts."
     },
     {
       "lead_id": 55,
@@ -496,8 +496,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": "Hi Bradley, thanks for downloading our whitepaper on cloud storage optimization. At Cloud Storage, we can help you reduce costs while improving performance. Can we set up a brief call to explore this further?"
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Bradley, thanks for downloading our whitepaper on cloud storage optimization. I believe our platform can help Cloud Storage streamline operations and reduce costs. Would you be open to a short discussion next week?"
     },
     {
       "lead_id": 60,
@@ -510,8 +510,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1019,
-      "outreach_message": "Hi Gina, thanks for attending our webinar on e-commerce growth. Our SaaS platform can help your platform scale and improve conversion rates. Let's schedule a quick call to explore how."
+      "days_since_interaction": 1020,
+      "outreach_message": "Hi Gina, thanks for attending our webinar on e-commerce growth. I believe our SaaS platform can help E-commerce Platform scale customer experience. Let's schedule a quick chat to explore this further."
     },
     {
       "lead_id": 62,
@@ -524,8 +524,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": "Hi Iris, thanks for the referral. I noticed your company is in telecom and we have solutions that help optimize network performance. I'd love to discuss how we can support your growth."
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Iris, thanks for the referral and for showing interest in our solutions for the telecom sector. I'd love to discuss how we can help Telecommunications Equipment streamline operations and drive growth. When would be a convenient time for a quick call?"
     },
     {
       "lead_id": 65,
@@ -538,8 +538,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1024,
-      "outreach_message": "Hi Lauren, following our recent call, I wanted to share how our solutions can improve device compliance and streamline production. Are you available for a brief follow-up?"
+      "days_since_interaction": 1025,
+      "outreach_message": "Hi Lauren, it was great speaking with you during our recent sales call. I\u2019m excited to explore how our solutions can support Medical Devices in enhancing product quality and compliance. Could we set up a follow\u2011up meeting next week?"
     },
     {
       "lead_id": 68,
@@ -552,8 +552,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1027,
-      "outreach_message": "Hi Oscar, thanks for the referral. Our warehouse automation tools can boost throughput and reduce errors for logistics firms like yours. Let's connect to explore further."
+      "days_since_interaction": 1028,
+      "outreach_message": "Hi Oscar, thanks for the referral and for your interest in Warehouse Automation. I\u2019d love to discuss how our technology can help streamline your warehouse operations and boost productivity. When would be a good time for a quick chat?"
     },
     {
       "lead_id": 69,
@@ -566,8 +566,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1028,
-      "outreach_message": "Hi Penny, thanks for your demo request. Our platform enhances user engagement for mental health apps, helping you scale impact. Can we schedule a quick walkthrough?"
+      "days_since_interaction": 1029,
+      "outreach_message": "Hi Penny, thank you for reaching out with a demo request for your Mental Health Platform. I\u2019m eager to show you how our platform can help you scale and improve user engagement. When can we schedule a demo?"
     },
     {
       "lead_id": 70,
@@ -580,8 +580,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": "Hi Quinton, I saw your LinkedIn post about database scaling. Our solutions can help your software firm optimize performance and reduce latency. Let's discuss how."
+      "days_since_interaction": 1030,
+      "outreach_message": "Hi Quinton, thanks for connecting via LinkedIn. I\u2019d like to discuss how our database software can help Database Software enhance performance and scalability. When would you be available for a brief call?"
     },
     {
       "lead_id": 71,
@@ -594,8 +594,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1030,
-      "outreach_message": "Hi Ruby, thanks for connecting during our recent sales call. I see Sustainable Fashion is making strides in eco\u2011friendly retail. I'd love to discuss how our solutions can help streamline your supply chain and boost sustainability metrics."
+      "days_since_interaction": 1031,
+      "outreach_message": "Hi Ruby, thanks for our recent sales call. Sustainable Fashion\u2019s focus on retail aligns well with our solutions. I\u2019d love to discuss how we can support your sustainability goals. Let me know a convenient time to chat."
     },
     {
       "lead_id": 74,
@@ -608,8 +608,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1033,
-      "outreach_message": "Hi Ulysses, thanks for the referral. Autonomous Vehicles is at the forefront of automotive innovation. I'd like to explore how our platform can support your vehicle data analytics and safety compliance."
+      "days_since_interaction": 1034,
+      "outreach_message": "Hi Ulysses, thank you for the referral. Autonomous Vehicles is an exciting space, and our platform can help streamline your operations. Could we schedule a brief call to explore this further?"
     },
     {
       "lead_id": 75,
@@ -622,8 +622,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1034,
-      "outreach_message": "Hi Veronica, thanks for requesting a demo. Commercial Cleaning can benefit from our workflow automation to reduce labor costs and improve service quality. Let's schedule a quick call to show you how."
+      "days_since_interaction": 1035,
+      "outreach_message": "Hi Veronica, thanks for requesting a demo. Commercial Cleaning can benefit from our efficiency tools. Let\u2019s set up a quick walkthrough at your convenience."
     },
     {
       "lead_id": 77,
@@ -636,8 +636,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1036,
-      "outreach_message": "Hi Ximena, great speaking with you on our sales call. Gaming Studio is creating immersive experiences; our tools can help optimize asset pipelines and reduce production time. Let's dive deeper."
+      "days_since_interaction": 1037,
+      "outreach_message": "Hi Ximena, appreciate the sales call. Gaming Studio\u2019s creative work could be enhanced with our collaboration tools. When would be a good time for a short discussion?"
     },
     {
       "lead_id": 78,
@@ -650,8 +650,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1037,
-      "outreach_message": "Hi Yolanda, thanks for attending our webinar. Customer Support Platform can enhance your SaaS with AI\u2011driven ticket routing and analytics. I'd love to walk you through a personalized demo."
+      "days_since_interaction": 1038,
+      "outreach_message": "Hi Yolanda, thanks for attending our webinar. Your Customer Support Platform could leverage our analytics to improve response times. Let\u2019s connect soon to dive deeper."
     },
     {
       "lead_id": 80,
@@ -664,8 +664,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1039,
-      "outreach_message": "Hi Audrey, thanks for the referral. Dental Practice Management can streamline patient scheduling and billing with our integrated solution. Let's discuss how we can improve your practice's efficiency."
+      "days_since_interaction": 1040,
+      "outreach_message": "Hi Audrey, thank you for the referral. Dental Practice Management can streamline patient workflows with our solutions. Could we arrange a brief call to discuss how?"
     },
     {
       "lead_id": 81,
@@ -678,8 +678,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1040,
-      "outreach_message": "Hi Bryson, thanks for reaching out for a demo. I see Climate Analytics is doing great work in climate tech. I'd love to discuss how our solution can help you scale your analytics platform. When would be a convenient time for a quick call?"
+      "days_since_interaction": 1041,
+      "outreach_message": "Hi Bryson, thanks for requesting a demo of our climate analytics platform. We\u2019re excited to show how our solution can help Climate Analytics streamline data and drive insights. Let\u2019s schedule a quick call to explore your needs."
     },
     {
       "lead_id": 83,
@@ -692,8 +692,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1042,
-      "outreach_message": "Hi Daisy, it was great speaking with you about your wedding planning tech. Our platform can streamline event workflows and boost client satisfaction. Let's schedule a follow-up to explore integration options."
+      "days_since_interaction": 1043,
+      "outreach_message": "Hi Daisy, it was great speaking with you about your wedding planning tech. Our platform can help Wedding Planning Tech enhance event coordination and guest experience. Let\u2019s set up a demo to dive deeper."
     },
     {
       "lead_id": 86,
@@ -706,8 +706,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1045,
-      "outreach_message": "Hi Gemma, thanks for the referral. I understand your PR firm is looking to enhance media outreach. Our tool can help you track campaign impact and streamline client reporting. When can we chat about this?"
+      "days_since_interaction": 1046,
+      "outreach_message": "Hi Gemma, thanks for the referral and for showing interest in our PR tools. We can help Public Relations Firm boost media outreach and brand visibility. Let\u2019s arrange a brief call to discuss."
     },
     {
       "lead_id": 87,
@@ -720,8 +720,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1046,
-      "outreach_message": "Hi Harper, thanks for requesting a demo. Our inventory solution can help retail brands like yours reduce stockouts and improve turnover. Let's set up a quick walkthrough at your convenience."
+      "days_since_interaction": 1047,
+      "outreach_message": "Hi Harper, thanks for requesting a demo. Our inventory solution can help Retail Inventory optimize stock levels and reduce shrinkage. Let\u2019s schedule a quick walkthrough."
     },
     {
       "lead_id": 88,
@@ -734,8 +734,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1047,
-      "outreach_message": "Hi Iris, I saw your LinkedIn outreach about corporate training. Our platform can help you deliver engaging e-learning experiences and track employee progress. Would you be open to a brief call to discuss?"
+      "days_since_interaction": 1048,
+      "outreach_message": "Hi Iris, I saw your interest via LinkedIn. Our EdTech platform can support Corporate Training in delivering engaging learning experiences. Let\u2019s connect for a short demo."
     },
     {
       "lead_id": 89,
@@ -748,8 +748,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1048,
-      "outreach_message": "Hi Julian, it was great connecting about your hotel management needs. Our solution can streamline booking operations and enhance guest experience. Let's schedule a follow-up to dive deeper."
+      "days_since_interaction": 1049,
+      "outreach_message": "Hi Julian, it was great chatting about your hotel management needs. Our solution can help Hotel Management improve guest services and operational efficiency. Let\u2019s set up a demo to explore further."
     },
     {
       "lead_id": 90,
@@ -762,8 +762,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1049,
-      "outreach_message": "Hi Kevin, thanks for attending our webinar. I noticed your focus on knowledge management. Our platform can help you centralize information and improve collaboration. When would be a good time to discuss further?"
+      "days_since_interaction": 1050,
+      "outreach_message": "Hi Kevin, thanks for attending our webinar. Our knowledge management tool can help Knowledge Management streamline information access and collaboration. Let\u2019s schedule a quick call to discuss."
     },
     {
       "lead_id": 92,
@@ -776,7 +776,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1051,
+      "days_since_interaction": 1052,
       "outreach_message": "Hi Marcus,\n\nThank you for the referral and for showing interest in our solutions for cyber insurance. I\u2019d love to discuss how we can help protect your clients and streamline your risk management processes. When would be a convenient time for a brief call?\n\nBest regards,\n[Your Name]"
     },
     {
@@ -790,8 +790,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1052,
-      "outreach_message": "Hi Natasha,\n\nThank you for requesting a demo of our platform. Our solution is designed to streamline trade operations and improve visibility across your supply chain. I\u2019d be happy to walk you through the key features that can benefit Import Export Trading. When might you have 15 minutes for a quick session?\n\nBest,\n[Your Name]"
+      "days_since_interaction": 1053,
+      "outreach_message": "Hi Natasha,\n\nThanks for requesting a demo of our platform. Our solution is designed to streamline import/export workflows and improve compliance for trading companies like yours. Could we schedule a quick walkthrough next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 95,
@@ -804,8 +804,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1054,
-      "outreach_message": "Hi Priya,\n\nFollowing our recent sales call, I wanted to share how our network security tools can enhance your organization\u2019s defenses and simplify compliance. Could we schedule a brief follow\u2011up to dive deeper into your specific needs?\n\nRegards,\n[Your Name]"
+      "days_since_interaction": 1055,
+      "outreach_message": "Hi Priya,\n\nFollowing our recent sales call, I wanted to share how our cybersecurity solutions can enhance your network security posture and protect critical data. Let\u2019s set up a time to dive deeper into the features that matter most to you.\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 98,
@@ -818,8 +818,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1057,
-      "outreach_message": "Hi Sophie,\n\nThank you for the referral and for expressing interest in improving laboratory information management. Our platform can help streamline data capture, analysis, and reporting for Laboratory Information. Would you be available for a short call to discuss how it can support your team?\n\nThank you,\n[Your Name]"
+      "days_since_interaction": 1058,
+      "outreach_message": "Hi Sophie,\n\nThank you for the referral. Our platform can improve laboratory information management and help you meet regulatory requirements more efficiently. Would you be available for a brief call to explore how we can support your team?\n\nSincerely,\n[Your Name]"
     },
     {
       "lead_id": 99,
@@ -832,35 +832,35 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1058,
-      "outreach_message": "Hi Tobias,\n\nThanks for requesting a demo of our vehicle tracking solution. Our system can help optimize fleet operations and enhance real\u2011time visibility for Vehicle Tracking. When would be a good time for a quick walkthrough?\n\nBest,\n[Your Name]"
+      "days_since_interaction": 1059,
+      "outreach_message": "Hi Tobias,\n\nThanks for requesting a demo of our vehicle tracking solutions. Our system can provide real-time visibility and improve fleet efficiency for automotive companies like yours. Let\u2019s schedule a walkthrough at your convenience.\n\nBest,\n[Your Name]"
     }
   ],
   "sample_outreach_messages": [
     {
       "name": "Alice Chen",
       "company": "CloudScale AI",
-      "message": "Hi Alice, thanks for reaching out about a demo at CloudScale AI. Our SaaS solutions are designed to help companies like yours scale efficiently and drive innovation. I\u2019d love to schedule a quick call to discuss how we can support your growth goals."
+      "message": "Hi Alice,\n\nThank you for requesting a demo of CloudScale AI. I\u2019d love to discuss how our SaaS solutions can help streamline your operations and drive growth. Could we schedule a brief call next week to explore your needs?\n\nBest regards,\n[Your Name]"
     },
     {
       "name": "Emma Thompson",
       "company": "RetailWorks Solutions",
-      "message": "Hi Emma, thanks for your interest in RetailWorks Solutions. Our platform can streamline your retail operations and enhance customer experience. Let\u2019s set up a brief call to explore how we can help you achieve your goals."
+      "message": "Hi Emma,\n\nThanks for reaching out about a demo for RetailWorks Solutions. I\u2019d be delighted to show how our platform can support your retail operations and enhance customer experience. Could we set up a quick call next week?\n\nBest,\n[Your Name]"
     },
     {
       "name": "Frank Liu",
       "company": "Healthcare Systems Ltd",
-      "message": "Hi Frank, thanks for connecting after your sales call at Healthcare Systems Ltd. Our solutions are tailored to improve patient data management and streamline clinical workflows. I\u2019d love to discuss how we can support your team\u2019s efficiency."
+      "message": "Hi Frank,\n\nFollowing our recent sales call, I\u2019d like to schedule a demo to demonstrate how our solution can benefit Healthcare Systems Ltd. When would be a convenient time for you next week?\n\nRegards,\n[Your Name]"
     },
     {
       "name": "Henry Park",
       "company": "EdTech Innovations",
-      "message": "Hi Henry, thanks for downloading content from EdTech Innovations. Our platform can boost student engagement and streamline curriculum delivery. Let\u2019s chat about how we can help you scale your educational impact."
+      "message": "Hi Henry,\n\nThank you for downloading our content on EdTech Innovations. I\u2019d love to discuss how our platform can enhance your educational technology offerings. Could we arrange a brief call next week?\n\nCheers,\n[Your Name]"
     },
     {
       "name": "Jack White",
       "company": "Digital Marketing Agency",
-      "message": "Hi Jack, thanks for your demo request at Digital Marketing Agency. Our tools can elevate your marketing campaigns and drive measurable results. I\u2019d be happy to walk you through a personalized demo."
+      "message": "Hi Jack,\n\nThanks for your demo request for Digital Marketing Agency. I\u2019d be excited to show how our solution can support your marketing initiatives. When would be a good time for a quick call next week?\n\nBest,\n[Your Name]"
     }
   ],
   "leads": [
@@ -875,8 +875,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": "Hi Alice, thanks for reaching out about a demo at CloudScale AI. Our SaaS solutions are designed to help companies like yours scale efficiently and drive innovation. I\u2019d love to schedule a quick call to discuss how we can support your growth goals."
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Alice,\n\nThank you for requesting a demo of CloudScale AI. I\u2019d love to discuss how our SaaS solutions can help streamline your operations and drive growth. Could we schedule a brief call next week to explore your needs?\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 2,
@@ -889,7 +889,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is near target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -903,7 +903,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1063,
+      "days_since_interaction": 1064,
       "outreach_message": ""
     },
     {
@@ -917,7 +917,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
+      "days_since_interaction": 1016,
       "outreach_message": ""
     },
     {
@@ -931,8 +931,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1084,
-      "outreach_message": "Hi Emma, thanks for your interest in RetailWorks Solutions. Our platform can streamline your retail operations and enhance customer experience. Let\u2019s set up a brief call to explore how we can help you achieve your goals."
+      "days_since_interaction": 1085,
+      "outreach_message": "Hi Emma,\n\nThanks for reaching out about a demo for RetailWorks Solutions. I\u2019d be delighted to show how our platform can support your retail operations and enhance customer experience. Could we set up a quick call next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 6,
@@ -945,8 +945,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": "Hi Frank, thanks for connecting after your sales call at Healthcare Systems Ltd. Our solutions are tailored to improve patient data management and streamline clinical workflows. I\u2019d love to discuss how we can support your team\u2019s efficiency."
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Frank,\n\nFollowing our recent sales call, I\u2019d like to schedule a demo to demonstrate how our solution can benefit Healthcare Systems Ltd. When would be a convenient time for you next week?\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 7,
@@ -959,7 +959,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1120,
+      "days_since_interaction": 1121,
       "outreach_message": ""
     },
     {
@@ -973,8 +973,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1019,
-      "outreach_message": "Hi Henry, thanks for downloading content from EdTech Innovations. Our platform can boost student engagement and streamline curriculum delivery. Let\u2019s chat about how we can help you scale your educational impact."
+      "days_since_interaction": 1020,
+      "outreach_message": "Hi Henry,\n\nThank you for downloading our content on EdTech Innovations. I\u2019d love to discuss how our platform can enhance your educational technology offerings. Could we arrange a brief call next week?\n\nCheers,\n[Your Name]"
     },
     {
       "lead_id": 9,
@@ -987,7 +987,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1135,
+      "days_since_interaction": 1136,
       "outreach_message": ""
     },
     {
@@ -1001,8 +1001,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": "Hi Jack, thanks for your demo request at Digital Marketing Agency. Our tools can elevate your marketing campaigns and drive measurable results. I\u2019d be happy to walk you through a personalized demo."
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Jack,\n\nThanks for your demo request for Digital Marketing Agency. I\u2019d be excited to show how our solution can support your marketing initiatives. When would be a good time for a quick call next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 11,
@@ -1015,8 +1015,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1049,
-      "outreach_message": "Hi Karen,\n\nI noticed you reached out via a sales call last year. I\u2019d love to reconnect and discuss how our solutions can help InsurancePro streamline claims processing and improve customer satisfaction. Let me know a convenient time for a brief call.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1050,
+      "outreach_message": "Hi Karen, I noticed your recent sales call and the interest from InsurancePro. I'd love to discuss how our solutions can support your insurance operations and help you achieve greater efficiency."
     },
     {
       "lead_id": 12,
@@ -1029,8 +1029,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": "Hi Leon,\n\nThank you for the referral! I see FinTech Startup is growing rapidly, and I believe our platform can support your scaling efforts by enhancing payment workflows and compliance checks. Could we schedule a quick chat next week?\n\nCheers,\n[Your Name]"
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Leon, thanks for the referral and your interest in FinTech. I'd like to explore how we can help your startup scale its operations and accelerate growth."
     },
     {
       "lead_id": 13,
@@ -1043,7 +1043,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1017,
+      "days_since_interaction": 1018,
       "outreach_message": ""
     },
     {
@@ -1057,8 +1057,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1020,
-      "outreach_message": "Hi Nathan,\n\nThanks for requesting a demo of our software solutions. I\u2019d love to walk you through how Enterprise Solutions Corp can benefit from our advanced analytics and automation tools. When would be a good time for a quick demo?\n\nRegards,\n[Your Name]"
+      "days_since_interaction": 1021,
+      "outreach_message": "Hi Nathan, thanks for requesting a demo from Enterprise Solutions Corp. Let's schedule a time to show how our software can streamline your processes and drive measurable results."
     },
     {
       "lead_id": 15,
@@ -1071,7 +1071,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1156,
+      "days_since_interaction": 1157,
       "outreach_message": ""
     },
     {
@@ -1085,8 +1085,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1069,
-      "outreach_message": "Hi Pamela,\n\nI appreciate your interest in our solutions during our last sales call. I\u2019d like to explore how Pharma Research Inc can leverage our platform to accelerate research timelines and regulatory compliance. Could we set up a brief call?\n\nBest,\n[Your Name]"
+      "days_since_interaction": 1070,
+      "outreach_message": "Hi Pamela, following our recent sales call at Pharma Research Inc, I\u2019d like to discuss how our platform can accelerate your research and bring new insights faster."
     },
     {
       "lead_id": 17,
@@ -1099,7 +1099,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1022,
+      "days_since_interaction": 1023,
       "outreach_message": ""
     },
     {
@@ -1113,7 +1113,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1054,
+      "days_since_interaction": 1055,
       "outreach_message": ""
     },
     {
@@ -1127,8 +1127,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1024,
-      "outreach_message": "Hi Samuel,\n\nThanks for the referral! Cybersecurity Startup\u2019s focus on threat detection aligns well with our security analytics platform. I\u2019d love to discuss how we can help you enhance your threat intelligence capabilities. When might you have time for a quick chat?\n\nThanks,\n[Your Name]"
+      "days_since_interaction": 1025,
+      "outreach_message": "Hi Samuel, thanks for the referral and your interest in cybersecurity. I'd love to show how our solutions can strengthen your startup\u2019s security posture and protect critical assets."
     },
     {
       "lead_id": 20,
@@ -1141,8 +1141,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1107,
-      "outreach_message": "Hi Tina,\n\nThank you for requesting a demo of our energy solutions. I\u2019d be delighted to show how Energy Solutions can optimize your grid management and reduce operational costs. Could we schedule a brief demo next week?\n\nKind regards,\n[Your Name]"
+      "days_since_interaction": 1108,
+      "outreach_message": "Hi Tina, thanks for requesting a demo from Energy Solutions. Let's explore how our technology can power your energy initiatives and deliver sustainable results."
     },
     {
       "lead_id": 21,
@@ -1155,7 +1155,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1025,
+      "days_since_interaction": 1026,
       "outreach_message": ""
     },
     {
@@ -1169,8 +1169,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1027,
-      "outreach_message": "Hi Victor, thanks for the call about your real estate platform. I'd love to discuss how our solution can streamline your listings and boost agent productivity."
+      "days_since_interaction": 1028,
+      "outreach_message": "Hi Victor,\n\nI hope you\u2019re doing well. I\u2019m following up on our recent sales call regarding your real\u2011estate platform. We\u2019re excited about the potential to help streamline your operations and would love to discuss how our solutions can support your growth. Let me know a convenient time for a quick chat.\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 23,
@@ -1183,7 +1183,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1028,
+      "days_since_interaction": 1029,
       "outreach_message": ""
     },
     {
@@ -1197,7 +1197,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1042,
+      "days_since_interaction": 1043,
       "outreach_message": ""
     },
     {
@@ -1211,8 +1211,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": "Hi Yuki, thanks for the referral. Our platform can help your travel tech company enhance booking experiences and improve customer satisfaction."
+      "days_since_interaction": 1030,
+      "outreach_message": "Hi Yuki,\n\nThank you for the referral and for showing interest in our travel\u2011tech solutions. I\u2019d love to explore how we can help your company enhance customer experience and operational efficiency. Could we schedule a brief call next week?\n\nWarm regards,\n[Your Name]"
     },
     {
       "lead_id": 26,
@@ -1225,8 +1225,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1059,
-      "outreach_message": "Hi Zara, thanks for requesting a demo. We can show how our tools support your institution's digital learning initiatives and streamline administrative workflows."
+      "days_since_interaction": 1060,
+      "outreach_message": "Hi Zara,\n\nThank you for requesting a demo for your education institution. We\u2019re eager to demonstrate how our platform can support your teaching and administrative needs. Please let me know a suitable time for a walkthrough.\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 27,
@@ -1239,7 +1239,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1031,
+      "days_since_interaction": 1032,
       "outreach_message": ""
     },
     {
@@ -1253,8 +1253,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1064,
-      "outreach_message": "Hi Bella, following our recent call, I'd like to share how our solution can improve case management and reduce administrative overhead for your legal services firm."
+      "days_since_interaction": 1065,
+      "outreach_message": "Hi Bella,\n\nI\u2019m following up on our recent sales call about your legal services firm. We\u2019re confident our solutions can streamline your case management and improve client communication. Could we set up a quick call to discuss next steps?\n\nKind regards,\n[Your Name]"
     },
     {
       "lead_id": 29,
@@ -1267,7 +1267,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1032,
+      "days_since_interaction": 1033,
       "outreach_message": ""
     },
     {
@@ -1281,8 +1281,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": "Hi Derek, thanks for the demo request. Our platform can help your cloud infrastructure team optimize resource allocation and improve operational efficiency."
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Derek,\n\nThank you for requesting a demo for your cloud infrastructure. Given the high priority of your project, I\u2019d like to arrange a personalized walkthrough at your earliest convenience. Please let me know a time that works for you.\n\nSincerely,\n[Your Name]"
     },
     {
       "lead_id": 31,
@@ -1295,8 +1295,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": "Hi Ethan, I noticed your company Mobile Development is a great fit for our solutions in the software space. Since we last connected on LinkedIn over a year ago, I'd love to catch up and discuss how we can help you accelerate your mobile projects. Let me know a convenient time for a quick call."
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Ethan, I noticed your company Mobile Development is a great fit for our solutions in the software space. Since we last connected via LinkedIn, I'd love to explore how we can help you accelerate your mobile projects. When would be a convenient time for a quick call?"
     },
     {
       "lead_id": 32,
@@ -1309,8 +1309,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1079,
-      "outreach_message": "Hi Fiona, it was great speaking with you during our recent sales call. Your telecom background at Telecommunications aligns well with our offerings. It's been over a year since we last touched base, and I'd like to explore how we can support your network expansion. When would be a good time for a brief discussion?"
+      "days_since_interaction": 1080,
+      "outreach_message": "Hi Fiona, thanks for the recent sales call. Your Telecom background at Telecommunications aligns well with our offerings. I'd like to discuss how we can support your network expansion. Are you available for a brief chat next week?"
     },
     {
       "lead_id": 33,
@@ -1323,7 +1323,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1019,
+      "days_since_interaction": 1020,
       "outreach_message": ""
     },
     {
@@ -1337,7 +1337,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is near target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1154,
+      "days_since_interaction": 1155,
       "outreach_message": ""
     },
     {
@@ -1351,8 +1351,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1017,
-      "outreach_message": "Hi Isabella, thanks for the referral and for connecting with us. Your role at Luxury Hotels in the hospitality sector is a perfect match for our services. It's been a while since we last spoke, and I'd love to discuss how we can enhance your guest experience through our solutions. Could we schedule a quick call?"
+      "days_since_interaction": 1018,
+      "outreach_message": "Hi Isabella, thanks for the referral. Luxury Hotels in the hospitality sector can benefit from our guest experience solutions. Let's schedule a call to explore potential collaboration."
     },
     {
       "lead_id": 36,
@@ -1365,8 +1365,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
-      "outreach_message": "Hi James, thank you for requesting a demo of our platform for Property Management. Since it's been over a year since we last interacted, I'd like to show you the latest features that can streamline your operations. When would be a convenient time for a short walkthrough?"
+      "days_since_interaction": 1016,
+      "outreach_message": "Hi James, thanks for requesting a demo. Property Management in Real Estate can streamline operations with our platform. Could we set up a quick walkthrough?"
     },
     {
       "lead_id": 37,
@@ -1379,7 +1379,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1020,
+      "days_since_interaction": 1021,
       "outreach_message": ""
     },
     {
@@ -1393,8 +1393,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1023,
-      "outreach_message": "Hi Liam, it was a pleasure speaking with you during our recent sales call. Your venture capital focus at Venture Capital Fund aligns with our investment analytics solutions. It's been a while since we last connected, and I'd love to discuss how we can support your portfolio companies. Let me know a suitable time for a brief chat."
+      "days_since_interaction": 1024,
+      "outreach_message": "Hi Liam, following our recent sales call, I see your Venture Capital Fund could leverage our investment analytics tools. Let's discuss how we can add value. When works for you?"
     },
     {
       "lead_id": 39,
@@ -1407,8 +1407,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": "Hi Mona, thanks for the referral and for connecting with us. Your work at Blockchain Startup in the cryptocurrency space is an exciting fit for our blockchain analytics platform. It's been over a year since we last touched base, and I'd like to explore how we can help you scale your operations. When would be a good time for a quick call?"
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Mona, thanks for the referral. Your Blockchain Startup in Cryptocurrency is an exciting space. I'd love to share how our solutions can support your growth. Are you free for a brief call?"
     },
     {
       "lead_id": 40,
@@ -1421,7 +1421,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1044,
+      "days_since_interaction": 1045,
       "outreach_message": ""
     },
     {
@@ -1435,8 +1435,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": "Hi Olivia,\n\nThank you for your demo request at Renewable Energy Corp. It\u2019s been a while since we last connected (over 3 years). I\u2019d love to discuss how our solutions can support your energy initiatives and help you achieve your sustainability goals.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Olivia,\n\nThank you for requesting a demo of our solution. We\u2019re excited to show you how it can help Renewable Energy Corp streamline operations and drive sustainability. Let me know a convenient time for a quick call to walk you through the key features.\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 42,
@@ -1449,7 +1449,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1024,
+      "days_since_interaction": 1025,
       "outreach_message": ""
     },
     {
@@ -1463,8 +1463,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1095,
-      "outreach_message": "Hi Quincy,\n\nIt was great speaking with you about your Streaming Service during our sales call. Since it\u2019s been a year since we last touched base, I\u2019d like to revisit how our platform can enhance your media operations and drive viewer engagement.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1096,
+      "outreach_message": "Hi Quincy,\n\nIt was great speaking with you during our recent sales call. I\u2019d love to dive deeper into how our platform can enhance your streaming service\u2019s content delivery and user experience. When would be a good time for a follow\u2011up discussion?\n\nThanks,\n[Your Name]"
     },
     {
       "lead_id": 44,
@@ -1477,7 +1477,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1025,
+      "days_since_interaction": 1026,
       "outreach_message": ""
     },
     {
@@ -1491,8 +1491,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1026,
-      "outreach_message": "Hi Steven,\n\nThank you for the referral and for your interest in Robotics Company. It\u2019s been a while since we last connected (just over 3 years). I\u2019d love to discuss how our solutions can help streamline your manufacturing processes.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1027,
+      "outreach_message": "Hi Steven,\n\nThanks for the referral! I\u2019m eager to show Robotics Company how our solution can boost manufacturing efficiency and reduce downtime. Could we schedule a brief demo next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 46,
@@ -1505,8 +1505,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1022,
-      "outreach_message": "Hi Sophia,\n\nThank you for your demo request at Wine Distribution. It\u2019s been more than 3 years since we last spoke. I\u2019d like to explore how our tools can support your retail operations and improve distribution efficiency.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1023,
+      "outreach_message": "Hi Sophia,\n\nThank you for your demo request. I\u2019d love to walk you through how our platform can help Wine Distribution optimize inventory and improve customer engagement. When would you be available for a quick call?\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 47,
@@ -1519,7 +1519,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1027,
+      "days_since_interaction": 1028,
       "outreach_message": ""
     },
     {
@@ -1533,7 +1533,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1028,
+      "days_since_interaction": 1029,
       "outreach_message": ""
     },
     {
@@ -1547,8 +1547,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1036,
-      "outreach_message": "Hi Victoria,\n\nIt was great connecting about Transportation Logistics during our sales call. Since it\u2019s been a while (over 3 years), I\u2019d love to revisit how our solutions can enhance your logistics workflow and reduce costs.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1037,
+      "outreach_message": "Hi Victoria,\n\nFollowing up on our recent sales call, I\u2019d like to demonstrate how our solution can streamline Transportation Logistics operations and enhance route planning. Could we set up a short meeting to explore this further?\n\nThank you,\n[Your Name]"
     },
     {
       "lead_id": 50,
@@ -1561,8 +1561,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": "Hi William,\n\nThank you for the referral and your interest in Pharmaceutical Distribution. It\u2019s been a while since we last connected (just over 3 years). I\u2019d like to discuss how our solutions can support your healthcare distribution needs.\n\nBest regards,\n[Your Name]"
+      "days_since_interaction": 1030,
+      "outreach_message": "Hi William,\n\nThanks for the referral! I\u2019m excited to discuss how our platform can support Pharmaceutical Distribution in improving supply chain visibility and compliance. When would be a convenient time for a brief call?\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 51,
@@ -1575,8 +1575,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1030,
-      "outreach_message": "Hi Xander, thanks for requesting a demo of our solution. At Virtual Reality Studios, we understand the unique challenges of the entertainment industry. I'd love to discuss how our platform can help you streamline your VR content pipeline. When would be a convenient time for a quick call?"
+      "days_since_interaction": 1031,
+      "outreach_message": "Hi Xander, thanks for requesting a demo of our VR solutions. I see Virtual Reality Studios is a great fit for our platform. I'd love to schedule a quick call to discuss how we can help you scale your immersive experiences. Let me know a convenient time."
     },
     {
       "lead_id": 52,
@@ -1589,7 +1589,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1031,
+      "days_since_interaction": 1032,
       "outreach_message": ""
     },
     {
@@ -1603,7 +1603,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1046,
+      "days_since_interaction": 1047,
       "outreach_message": ""
     },
     {
@@ -1617,8 +1617,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
-      "outreach_message": "Hi Amelia, it was great speaking with you about your cybersecurity consulting needs. Our solution can help your clients protect against evolving threats. Let's schedule a follow-up to dive deeper into how we can support your team."
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Amelia, following our recent call, I wanted to share how our security analytics can complement Cybersecurity Consulting's services. Could we set up a brief meeting to explore integration possibilities? Looking forward to your thoughts."
     },
     {
       "lead_id": 55,
@@ -1631,8 +1631,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": "Hi Bradley, thanks for downloading our whitepaper on cloud storage optimization. At Cloud Storage, we can help you reduce costs while improving performance. Can we set up a brief call to explore this further?"
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Bradley, thanks for downloading our whitepaper on cloud storage optimization. I believe our platform can help Cloud Storage streamline operations and reduce costs. Would you be open to a short discussion next week?"
     },
     {
       "lead_id": 56,
@@ -1645,8 +1645,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
-      "outreach_message": "Hi Chloe, thanks for the referral and for showing interest in our supply chain analytics platform. I'd love to discuss how we can help streamline your operations. When would be a good time for a quick chat?"
+      "days_since_interaction": 1016,
+      "outreach_message": "Hi Chloe, thanks to the referral for Supply Chain Analytics. Our analytics suite aligns well with your focus on supply chain efficiency. Could we schedule a quick call to explore how we can support your growth?"
     },
     {
       "lead_id": 57,
@@ -1659,8 +1659,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": "Hi Dominic, thanks for requesting a demo. Our payment processing solution can help streamline transactions for FinTech companies like yours. Let's schedule a call to walk through the features."
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Dominic, thanks for your interest in a demo of our payment processing solutions. I think our platform could enhance Payment Processing's transaction speed and security. Let's find a time to dive deeper."
     },
     {
       "lead_id": 58,
@@ -1673,7 +1673,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1017,
+      "days_since_interaction": 1018,
       "outreach_message": ""
     },
     {
@@ -1687,8 +1687,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": "Hi Franklin, it was great speaking with you about your accounting software needs. Our platform can help automate bookkeeping and improve reporting. Can we set up a follow-up to discuss next steps?"
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Franklin, following our recent conversation, I wanted to share how our accounting automation can benefit Accounting Software. Could we arrange a brief call to discuss integration options?"
     },
     {
       "lead_id": 60,
@@ -1701,8 +1701,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1019,
-      "outreach_message": "Hi Gina, thanks for attending our webinar on e-commerce growth. Our SaaS platform can help your platform scale and improve conversion rates. Let's schedule a quick call to explore how."
+      "days_since_interaction": 1020,
+      "outreach_message": "Hi Gina, thanks for attending our webinar on e-commerce growth. I believe our SaaS platform can help E-commerce Platform scale customer experience. Let's schedule a quick chat to explore this further."
     },
     {
       "lead_id": 61,
@@ -1715,7 +1715,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1020,
+      "days_since_interaction": 1021,
       "outreach_message": ""
     },
     {
@@ -1729,8 +1729,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": "Hi Iris, thanks for the referral. I noticed your company is in telecom and we have solutions that help optimize network performance. I'd love to discuss how we can support your growth."
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Iris, thanks for the referral and for showing interest in our solutions for the telecom sector. I'd love to discuss how we can help Telecommunications Equipment streamline operations and drive growth. When would be a convenient time for a quick call?"
     },
     {
       "lead_id": 63,
@@ -1743,8 +1743,8 @@
       "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1022,
-      "outreach_message": "Hi Jerome, thanks for requesting a demo. Our platform streamlines logistics workflows and could help your software company reduce costs. Let's schedule a quick call."
+      "days_since_interaction": 1023,
+      "outreach_message": "Hi Jerome, thank you for requesting a demo of our logistics optimization platform. I'd be happy to walk you through how it can help Logistics Optimization improve efficiency and reduce costs. When can we schedule a brief session?"
     },
     {
       "lead_id": 64,
@@ -1757,7 +1757,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1023,
+      "days_since_interaction": 1024,
       "outreach_message": ""
     },
     {
@@ -1771,8 +1771,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1024,
-      "outreach_message": "Hi Lauren, following our recent call, I wanted to share how our solutions can improve device compliance and streamline production. Are you available for a brief follow-up?"
+      "days_since_interaction": 1025,
+      "outreach_message": "Hi Lauren, it was great speaking with you during our recent sales call. I\u2019m excited to explore how our solutions can support Medical Devices in enhancing product quality and compliance. Could we set up a follow\u2011up meeting next week?"
     },
     {
       "lead_id": 66,
@@ -1785,7 +1785,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1025,
+      "days_since_interaction": 1026,
       "outreach_message": ""
     },
     {
@@ -1799,7 +1799,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1026,
+      "days_since_interaction": 1027,
       "outreach_message": ""
     },
     {
@@ -1813,8 +1813,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1027,
-      "outreach_message": "Hi Oscar, thanks for the referral. Our warehouse automation tools can boost throughput and reduce errors for logistics firms like yours. Let's connect to explore further."
+      "days_since_interaction": 1028,
+      "outreach_message": "Hi Oscar, thanks for the referral and for your interest in Warehouse Automation. I\u2019d love to discuss how our technology can help streamline your warehouse operations and boost productivity. When would be a good time for a quick chat?"
     },
     {
       "lead_id": 69,
@@ -1827,8 +1827,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1028,
-      "outreach_message": "Hi Penny, thanks for your demo request. Our platform enhances user engagement for mental health apps, helping you scale impact. Can we schedule a quick walkthrough?"
+      "days_since_interaction": 1029,
+      "outreach_message": "Hi Penny, thank you for reaching out with a demo request for your Mental Health Platform. I\u2019m eager to show you how our platform can help you scale and improve user engagement. When can we schedule a demo?"
     },
     {
       "lead_id": 70,
@@ -1841,8 +1841,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": "Hi Quinton, I saw your LinkedIn post about database scaling. Our solutions can help your software firm optimize performance and reduce latency. Let's discuss how."
+      "days_since_interaction": 1030,
+      "outreach_message": "Hi Quinton, thanks for connecting via LinkedIn. I\u2019d like to discuss how our database software can help Database Software enhance performance and scalability. When would you be available for a brief call?"
     },
     {
       "lead_id": 71,
@@ -1855,8 +1855,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1030,
-      "outreach_message": "Hi Ruby, thanks for connecting during our recent sales call. I see Sustainable Fashion is making strides in eco\u2011friendly retail. I'd love to discuss how our solutions can help streamline your supply chain and boost sustainability metrics."
+      "days_since_interaction": 1031,
+      "outreach_message": "Hi Ruby, thanks for our recent sales call. Sustainable Fashion\u2019s focus on retail aligns well with our solutions. I\u2019d love to discuss how we can support your sustainability goals. Let me know a convenient time to chat."
     },
     {
       "lead_id": 72,
@@ -1869,7 +1869,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1031,
+      "days_since_interaction": 1032,
       "outreach_message": ""
     },
     {
@@ -1883,7 +1883,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1032,
+      "days_since_interaction": 1033,
       "outreach_message": ""
     },
     {
@@ -1897,8 +1897,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1033,
-      "outreach_message": "Hi Ulysses, thanks for the referral. Autonomous Vehicles is at the forefront of automotive innovation. I'd like to explore how our platform can support your vehicle data analytics and safety compliance."
+      "days_since_interaction": 1034,
+      "outreach_message": "Hi Ulysses, thank you for the referral. Autonomous Vehicles is an exciting space, and our platform can help streamline your operations. Could we schedule a brief call to explore this further?"
     },
     {
       "lead_id": 75,
@@ -1911,8 +1911,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1034,
-      "outreach_message": "Hi Veronica, thanks for requesting a demo. Commercial Cleaning can benefit from our workflow automation to reduce labor costs and improve service quality. Let's schedule a quick call to show you how."
+      "days_since_interaction": 1035,
+      "outreach_message": "Hi Veronica, thanks for requesting a demo. Commercial Cleaning can benefit from our efficiency tools. Let\u2019s set up a quick walkthrough at your convenience."
     },
     {
       "lead_id": 76,
@@ -1925,7 +1925,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1035,
+      "days_since_interaction": 1036,
       "outreach_message": ""
     },
     {
@@ -1939,8 +1939,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1036,
-      "outreach_message": "Hi Ximena, great speaking with you on our sales call. Gaming Studio is creating immersive experiences; our tools can help optimize asset pipelines and reduce production time. Let's dive deeper."
+      "days_since_interaction": 1037,
+      "outreach_message": "Hi Ximena, appreciate the sales call. Gaming Studio\u2019s creative work could be enhanced with our collaboration tools. When would be a good time for a short discussion?"
     },
     {
       "lead_id": 78,
@@ -1953,8 +1953,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1037,
-      "outreach_message": "Hi Yolanda, thanks for attending our webinar. Customer Support Platform can enhance your SaaS with AI\u2011driven ticket routing and analytics. I'd love to walk you through a personalized demo."
+      "days_since_interaction": 1038,
+      "outreach_message": "Hi Yolanda, thanks for attending our webinar. Your Customer Support Platform could leverage our analytics to improve response times. Let\u2019s connect soon to dive deeper."
     },
     {
       "lead_id": 79,
@@ -1967,7 +1967,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1038,
+      "days_since_interaction": 1039,
       "outreach_message": ""
     },
     {
@@ -1981,8 +1981,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1039,
-      "outreach_message": "Hi Audrey, thanks for the referral. Dental Practice Management can streamline patient scheduling and billing with our integrated solution. Let's discuss how we can improve your practice's efficiency."
+      "days_since_interaction": 1040,
+      "outreach_message": "Hi Audrey, thank you for the referral. Dental Practice Management can streamline patient workflows with our solutions. Could we arrange a brief call to discuss how?"
     },
     {
       "lead_id": 81,
@@ -1995,8 +1995,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1040,
-      "outreach_message": "Hi Bryson, thanks for reaching out for a demo. I see Climate Analytics is doing great work in climate tech. I'd love to discuss how our solution can help you scale your analytics platform. When would be a convenient time for a quick call?"
+      "days_since_interaction": 1041,
+      "outreach_message": "Hi Bryson, thanks for requesting a demo of our climate analytics platform. We\u2019re excited to show how our solution can help Climate Analytics streamline data and drive insights. Let\u2019s schedule a quick call to explore your needs."
     },
     {
       "lead_id": 82,
@@ -2009,7 +2009,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1041,
+      "days_since_interaction": 1042,
       "outreach_message": ""
     },
     {
@@ -2023,8 +2023,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1042,
-      "outreach_message": "Hi Daisy, it was great speaking with you about your wedding planning tech. Our platform can streamline event workflows and boost client satisfaction. Let's schedule a follow-up to explore integration options."
+      "days_since_interaction": 1043,
+      "outreach_message": "Hi Daisy, it was great speaking with you about your wedding planning tech. Our platform can help Wedding Planning Tech enhance event coordination and guest experience. Let\u2019s set up a demo to dive deeper."
     },
     {
       "lead_id": 84,
@@ -2037,7 +2037,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1043,
+      "days_since_interaction": 1044,
       "outreach_message": ""
     },
     {
@@ -2051,7 +2051,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1044,
+      "days_since_interaction": 1045,
       "outreach_message": ""
     },
     {
@@ -2065,8 +2065,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1045,
-      "outreach_message": "Hi Gemma, thanks for the referral. I understand your PR firm is looking to enhance media outreach. Our tool can help you track campaign impact and streamline client reporting. When can we chat about this?"
+      "days_since_interaction": 1046,
+      "outreach_message": "Hi Gemma, thanks for the referral and for showing interest in our PR tools. We can help Public Relations Firm boost media outreach and brand visibility. Let\u2019s arrange a brief call to discuss."
     },
     {
       "lead_id": 87,
@@ -2079,8 +2079,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1046,
-      "outreach_message": "Hi Harper, thanks for requesting a demo. Our inventory solution can help retail brands like yours reduce stockouts and improve turnover. Let's set up a quick walkthrough at your convenience."
+      "days_since_interaction": 1047,
+      "outreach_message": "Hi Harper, thanks for requesting a demo. Our inventory solution can help Retail Inventory optimize stock levels and reduce shrinkage. Let\u2019s schedule a quick walkthrough."
     },
     {
       "lead_id": 88,
@@ -2093,8 +2093,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1047,
-      "outreach_message": "Hi Iris, I saw your LinkedIn outreach about corporate training. Our platform can help you deliver engaging e-learning experiences and track employee progress. Would you be open to a brief call to discuss?"
+      "days_since_interaction": 1048,
+      "outreach_message": "Hi Iris, I saw your interest via LinkedIn. Our EdTech platform can support Corporate Training in delivering engaging learning experiences. Let\u2019s connect for a short demo."
     },
     {
       "lead_id": 89,
@@ -2107,8 +2107,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1048,
-      "outreach_message": "Hi Julian, it was great connecting about your hotel management needs. Our solution can streamline booking operations and enhance guest experience. Let's schedule a follow-up to dive deeper."
+      "days_since_interaction": 1049,
+      "outreach_message": "Hi Julian, it was great chatting about your hotel management needs. Our solution can help Hotel Management improve guest services and operational efficiency. Let\u2019s set up a demo to explore further."
     },
     {
       "lead_id": 90,
@@ -2121,8 +2121,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1049,
-      "outreach_message": "Hi Kevin, thanks for attending our webinar. I noticed your focus on knowledge management. Our platform can help you centralize information and improve collaboration. When would be a good time to discuss further?"
+      "days_since_interaction": 1050,
+      "outreach_message": "Hi Kevin, thanks for attending our webinar. Our knowledge management tool can help Knowledge Management streamline information access and collaboration. Let\u2019s schedule a quick call to discuss."
     },
     {
       "lead_id": 91,
@@ -2135,7 +2135,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1050,
+      "days_since_interaction": 1051,
       "outreach_message": ""
     },
     {
@@ -2149,7 +2149,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1051,
+      "days_since_interaction": 1052,
       "outreach_message": "Hi Marcus,\n\nThank you for the referral and for showing interest in our solutions for cyber insurance. I\u2019d love to discuss how we can help protect your clients and streamline your risk management processes. When would be a convenient time for a brief call?\n\nBest regards,\n[Your Name]"
     },
     {
@@ -2163,8 +2163,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1052,
-      "outreach_message": "Hi Natasha,\n\nThank you for requesting a demo of our platform. Our solution is designed to streamline trade operations and improve visibility across your supply chain. I\u2019d be happy to walk you through the key features that can benefit Import Export Trading. When might you have 15 minutes for a quick session?\n\nBest,\n[Your Name]"
+      "days_since_interaction": 1053,
+      "outreach_message": "Hi Natasha,\n\nThanks for requesting a demo of our platform. Our solution is designed to streamline import/export workflows and improve compliance for trading companies like yours. Could we schedule a quick walkthrough next week?\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 94,
@@ -2177,7 +2177,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1053,
+      "days_since_interaction": 1054,
       "outreach_message": ""
     },
     {
@@ -2191,8 +2191,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1054,
-      "outreach_message": "Hi Priya,\n\nFollowing our recent sales call, I wanted to share how our network security tools can enhance your organization\u2019s defenses and simplify compliance. Could we schedule a brief follow\u2011up to dive deeper into your specific needs?\n\nRegards,\n[Your Name]"
+      "days_since_interaction": 1055,
+      "outreach_message": "Hi Priya,\n\nFollowing our recent sales call, I wanted to share how our cybersecurity solutions can enhance your network security posture and protect critical data. Let\u2019s set up a time to dive deeper into the features that matter most to you.\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 96,
@@ -2205,7 +2205,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1055,
+      "days_since_interaction": 1056,
       "outreach_message": ""
     },
     {
@@ -2219,7 +2219,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1056,
+      "days_since_interaction": 1057,
       "outreach_message": ""
     },
     {
@@ -2233,8 +2233,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1057,
-      "outreach_message": "Hi Sophie,\n\nThank you for the referral and for expressing interest in improving laboratory information management. Our platform can help streamline data capture, analysis, and reporting for Laboratory Information. Would you be available for a short call to discuss how it can support your team?\n\nThank you,\n[Your Name]"
+      "days_since_interaction": 1058,
+      "outreach_message": "Hi Sophie,\n\nThank you for the referral. Our platform can improve laboratory information management and help you meet regulatory requirements more efficiently. Would you be available for a brief call to explore how we can support your team?\n\nSincerely,\n[Your Name]"
     },
     {
       "lead_id": 99,
@@ -2247,8 +2247,8 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1058,
-      "outreach_message": "Hi Tobias,\n\nThanks for requesting a demo of our vehicle tracking solution. Our system can help optimize fleet operations and enhance real\u2011time visibility for Vehicle Tracking. When would be a good time for a quick walkthrough?\n\nBest,\n[Your Name]"
+      "days_since_interaction": 1059,
+      "outreach_message": "Hi Tobias,\n\nThanks for requesting a demo of our vehicle tracking solutions. Our system can provide real-time visibility and improve fleet efficiency for automotive companies like yours. Let\u2019s schedule a walkthrough at your convenience.\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 100,
@@ -2261,7 +2261,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1059,
+      "days_since_interaction": 1060,
       "outreach_message": ""
     }
   ],

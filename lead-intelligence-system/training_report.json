@@ -3,13 +3,250 @@
   "rubric": "Five factors scored 0-2: company size, industry, source/intent, interaction recency, data completeness.",
   "summary": {
     "total_processed": 29,
-    "qualified_count": 0,
-    "qualified_percent": 0.0,
-    "review_count": 29,
+    "qualified_count": 15,
+    "qualified_percent": 51.72,
+    "review_count": 14,
     "rejected_count": 0
   },
-  "priority_queue": [],
-  "sample_outreach_messages": [],
+  "priority_queue": [
+    {
+      "lead_id": 1,
+      "name": "Alice Chen",
+      "company": "CloudScale AI",
+      "industry": "SaaS",
+      "source": "Inbound demo request",
+      "qualification_score": 8,
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Alice, thanks for requesting a demo of CloudScale AI\u2019s SaaS solutions. I\u2019d love to discuss how we can help your team scale efficiently and drive growth."
+    },
+    {
+      "lead_id": 12,
+      "name": "Leon Chen",
+      "company": "FinTech Startup",
+      "industry": "FinTech",
+      "source": "Referral",
+      "qualification_score": 8,
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Leon, thanks for the referral and for your interest in our FinTech solutions. I'd love to discuss how we can support your startup's growth."
+    },
+    {
+      "lead_id": 14,
+      "name": "Nathan Brooks",
+      "company": "Enterprise Solutions Corp",
+      "industry": "Software",
+      "source": "Inbound demo request",
+      "qualification_score": 8,
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1021,
+      "outreach_message": "Hi Nathan, thanks for requesting a demo. I'd be happy to walk you through how our software can enhance Enterprise Solutions Corp's capabilities."
+    },
+    {
+      "lead_id": 5,
+      "name": "Emma Thompson",
+      "company": "RetailWorks Solutions",
+      "industry": "Retail",
+      "source": "Inbound demo request",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1085,
+      "outreach_message": "Hi Emma, thanks for reaching out about a demo at RetailWorks Solutions. I\u2019d like to explore how our platform can support your retail operations and drive customer engagement."
+    },
+    {
+      "lead_id": 6,
+      "name": "Frank Liu",
+      "company": "Healthcare Systems Ltd",
+      "industry": "Healthcare",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Frank, thank you for the recent sales call regarding Healthcare Systems Ltd. I\u2019d be happy to dive deeper into how our solutions can improve patient care and streamline operations."
+    },
+    {
+      "lead_id": 8,
+      "name": "Henry Park",
+      "company": "EdTech Innovations",
+      "industry": "EdTech",
+      "source": "Content download",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1020,
+      "outreach_message": "Hi Henry, thanks for downloading our content at EdTech Innovations. I\u2019d love to discuss how our tools can enhance your educational offerings and improve learning outcomes."
+    },
+    {
+      "lead_id": 10,
+      "name": "Jack White",
+      "company": "Digital Marketing Agency",
+      "industry": "Marketing",
+      "source": "Inbound demo request",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Jack, thanks for requesting a demo at Digital Marketing Agency. I\u2019d like to explore how our platform can boost your marketing campaigns and deliver measurable results."
+    },
+    {
+      "lead_id": 11,
+      "name": "Karen Miller",
+      "company": "InsurancePro",
+      "industry": "Insurance",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1050,
+      "outreach_message": "Hi Karen, thanks for taking the time during our recent sales call. I see InsurancePro is a great fit for our solutions in the insurance space. I'd love to reconnect and explore how we can help streamline your operations."
+    },
+    {
+      "lead_id": 16,
+      "name": "Pamela White",
+      "company": "Pharma Research Inc",
+      "industry": "Pharmaceuticals",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1070,
+      "outreach_message": "Hi Pamela, following our recent sales call, I wanted to share how our platform can accelerate Pharma Research Inc's research workflows."
+    },
+    {
+      "lead_id": 19,
+      "name": "Samuel Lee",
+      "company": "Cybersecurity Startup",
+      "industry": "Cybersecurity",
+      "source": "Referral",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1025,
+      "outreach_message": "Hi Samuel, thanks for the referral. I'd love to discuss how our cybersecurity solutions can help your startup stay ahead of threats."
+    },
+    {
+      "lead_id": 20,
+      "name": "Tina Patel",
+      "company": "Energy Solutions",
+      "industry": "Energy",
+      "source": "Inbound demo request",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1108,
+      "outreach_message": "Hi Tina, thanks for your demo request. I'd be glad to show how our solutions can power Energy Solutions' efficiency."
+    },
+    {
+      "lead_id": 22,
+      "name": "Victor Moore",
+      "company": "Real Estate Platform",
+      "industry": "Real Estate",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1028,
+      "outreach_message": "Hi Victor, thanks for the recent call about your Real Estate Platform. I\u2019d love to discuss how our solutions can help streamline your operations and drive growth. Let me know a convenient time to connect."
+    },
+    {
+      "lead_id": 25,
+      "name": "Yuki Tanaka",
+      "company": "Travel Technology",
+      "industry": "Travel",
+      "source": "Referral",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1030,
+      "outreach_message": "Hello Yuki, I appreciate the referral and your interest in Travel Technology. Our platform can enhance your travel tech offerings and improve customer experience. Could we schedule a brief call to explore this further?"
+    },
+    {
+      "lead_id": 26,
+      "name": "Zara Hassan",
+      "company": "Education Institution",
+      "industry": "Education",
+      "source": "Inbound demo request",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1060,
+      "outreach_message": "Hi Zara, thanks for requesting a demo of our education solutions. I\u2019d be happy to walk you through how our tools can support your institution\u2019s goals. When would be a good time for a quick demo?"
+    },
+    {
+      "lead_id": 28,
+      "name": "Bella Cross",
+      "company": "Legal Services Firm",
+      "industry": "Legal",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1065,
+      "outreach_message": "Hello Bella, following our recent sales call, I wanted to share how our services can support your Legal Services Firm\u2019s efficiency and compliance. Let\u2019s set up a time to discuss next steps."
+    }
+  ],
+  "sample_outreach_messages": [
+    {
+      "name": "Alice Chen",
+      "company": "CloudScale AI",
+      "message": "Hi Alice, thanks for requesting a demo of CloudScale AI\u2019s SaaS solutions. I\u2019d love to discuss how we can help your team scale efficiently and drive growth."
+    },
+    {
+      "name": "Emma Thompson",
+      "company": "RetailWorks Solutions",
+      "message": "Hi Emma, thanks for reaching out about a demo at RetailWorks Solutions. I\u2019d like to explore how our platform can support your retail operations and drive customer engagement."
+    },
+    {
+      "name": "Frank Liu",
+      "company": "Healthcare Systems Ltd",
+      "message": "Hi Frank, thank you for the recent sales call regarding Healthcare Systems Ltd. I\u2019d be happy to dive deeper into how our solutions can improve patient care and streamline operations."
+    },
+    {
+      "name": "Henry Park",
+      "company": "EdTech Innovations",
+      "message": "Hi Henry, thanks for downloading our content at EdTech Innovations. I\u2019d love to discuss how our tools can enhance your educational offerings and improve learning outcomes."
+    },
+    {
+      "name": "Jack White",
+      "company": "Digital Marketing Agency",
+      "message": "Hi Jack, thanks for requesting a demo at Digital Marketing Agency. I\u2019d like to explore how our platform can boost your marketing campaigns and deliver measurable results."
+    }
+  ],
   "leads": [
     {
       "lead_id": 1,
@@ -18,12 +255,12 @@
       "industry": "SaaS",
       "source": "Inbound demo request",
       "qualification_score": 8,
-      "decision": "REVIEW",
-      "priority": "MEDIUM",
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
-      "outreach_message": ""
+      "days_since_interaction": 1019,
+      "outreach_message": "Hi Alice, thanks for requesting a demo of CloudScale AI\u2019s SaaS solutions. I\u2019d love to discuss how we can help your team scale efficiently and drive growth."
     },
     {
       "lead_id": 2,
@@ -36,7 +273,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is near target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -50,7 +287,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1063,
+      "days_since_interaction": 1064,
       "outreach_message": ""
     },
     {
@@ -64,7 +301,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
+      "days_since_interaction": 1016,
       "outreach_message": ""
     },
     {
@@ -74,12 +311,12 @@
       "industry": "Retail",
       "source": "Inbound demo request",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1084,
-      "outreach_message": ""
+      "days_since_interaction": 1085,
+      "outreach_message": "Hi Emma, thanks for reaching out about a demo at RetailWorks Solutions. I\u2019d like to explore how our platform can support your retail operations and drive customer engagement."
     },
     {
       "lead_id": 6,
@@ -88,12 +325,12 @@
       "industry": "Healthcare",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1021,
-      "outreach_message": ""
+      "days_since_interaction": 1022,
+      "outreach_message": "Hi Frank, thank you for the recent sales call regarding Healthcare Systems Ltd. I\u2019d be happy to dive deeper into how our solutions can improve patient care and streamline operations."
     },
     {
       "lead_id": 7,
@@ -106,7 +343,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1120,
+      "days_since_interaction": 1121,
       "outreach_message": ""
     },
     {
@@ -116,12 +353,12 @@
       "industry": "EdTech",
       "source": "Content download",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1019,
-      "outreach_message": ""
+      "days_since_interaction": 1020,
+      "outreach_message": "Hi Henry, thanks for downloading our content at EdTech Innovations. I\u2019d love to discuss how our tools can enhance your educational offerings and improve learning outcomes."
     },
     {
       "lead_id": 9,
@@ -134,7 +371,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1135,
+      "days_since_interaction": 1136,
       "outreach_message": ""
     },
     {
@@ -144,12 +381,12 @@
       "industry": "Marketing",
       "source": "Inbound demo request",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": ""
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Jack, thanks for requesting a demo at Digital Marketing Agency. I\u2019d like to explore how our platform can boost your marketing campaigns and deliver measurable results."
     },
     {
       "lead_id": 11,
@@ -158,12 +395,12 @@
       "industry": "Insurance",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1049,
-      "outreach_message": ""
+      "days_since_interaction": 1050,
+      "outreach_message": "Hi Karen, thanks for taking the time during our recent sales call. I see InsurancePro is a great fit for our solutions in the insurance space. I'd love to reconnect and explore how we can help streamline your operations."
     },
     {
       "lead_id": 12,
@@ -172,12 +409,12 @@
       "industry": "FinTech",
       "source": "Referral",
       "qualification_score": 8,
-      "decision": "REVIEW",
-      "priority": "MEDIUM",
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": ""
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Leon, thanks for the referral and for your interest in our FinTech solutions. I'd love to discuss how we can support your startup's growth."
     },
     {
       "lead_id": 13,
@@ -190,7 +427,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1017,
+      "days_since_interaction": 1018,
       "outreach_message": ""
     },
     {
@@ -200,12 +437,12 @@
       "industry": "Software",
       "source": "Inbound demo request",
       "qualification_score": 8,
-      "decision": "REVIEW",
-      "priority": "MEDIUM",
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1020,
-      "outreach_message": ""
+      "days_since_interaction": 1021,
+      "outreach_message": "Hi Nathan, thanks for requesting a demo. I'd be happy to walk you through how our software can enhance Enterprise Solutions Corp's capabilities."
     },
     {
       "lead_id": 15,
@@ -218,7 +455,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1156,
+      "days_since_interaction": 1157,
       "outreach_message": ""
     },
     {
@@ -228,12 +465,12 @@
       "industry": "Pharmaceuticals",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1069,
-      "outreach_message": ""
+      "days_since_interaction": 1070,
+      "outreach_message": "Hi Pamela, following our recent sales call, I wanted to share how our platform can accelerate Pharma Research Inc's research workflows."
     },
     {
       "lead_id": 17,
@@ -246,7 +483,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1022,
+      "days_since_interaction": 1023,
       "outreach_message": ""
     },
     {
@@ -260,7 +497,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1054,
+      "days_since_interaction": 1055,
       "outreach_message": ""
     },
     {
@@ -270,12 +507,12 @@
       "industry": "Cybersecurity",
       "source": "Referral",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1024,
-      "outreach_message": ""
+      "days_since_interaction": 1025,
+      "outreach_message": "Hi Samuel, thanks for the referral. I'd love to discuss how our cybersecurity solutions can help your startup stay ahead of threats."
     },
     {
       "lead_id": 20,
@@ -284,12 +521,12 @@
       "industry": "Energy",
       "source": "Inbound demo request",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1107,
-      "outreach_message": ""
+      "days_since_interaction": 1108,
+      "outreach_message": "Hi Tina, thanks for your demo request. I'd be glad to show how our solutions can power Energy Solutions' efficiency."
     },
     {
       "lead_id": 21,
@@ -302,7 +539,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1025,
+      "days_since_interaction": 1026,
       "outreach_message": ""
     },
     {
@@ -312,12 +549,12 @@
       "industry": "Real Estate",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1027,
-      "outreach_message": ""
+      "days_since_interaction": 1028,
+      "outreach_message": "Hi Victor, thanks for the recent call about your Real Estate Platform. I\u2019d love to discuss how our solutions can help streamline your operations and drive growth. Let me know a convenient time to connect."
     },
     {
       "lead_id": 23,
@@ -330,7 +567,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1028,
+      "days_since_interaction": 1029,
       "outreach_message": ""
     },
     {
@@ -344,7 +581,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1042,
+      "days_since_interaction": 1043,
       "outreach_message": ""
     },
     {
@@ -354,12 +591,12 @@
       "industry": "Travel",
       "source": "Referral",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1029,
-      "outreach_message": ""
+      "days_since_interaction": 1030,
+      "outreach_message": "Hello Yuki, I appreciate the referral and your interest in Travel Technology. Our platform can enhance your travel tech offerings and improve customer experience. Could we schedule a brief call to explore this further?"
     },
     {
       "lead_id": 26,
@@ -368,12 +605,12 @@
       "industry": "Education",
       "source": "Inbound demo request",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1059,
-      "outreach_message": ""
+      "days_since_interaction": 1060,
+      "outreach_message": "Hi Zara, thanks for requesting a demo of our education solutions. I\u2019d be happy to walk you through how our tools can support your institution\u2019s goals. When would be a good time for a quick demo?"
     },
     {
       "lead_id": 27,
@@ -386,7 +623,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1031,
+      "days_since_interaction": 1032,
       "outreach_message": ""
     },
     {
@@ -396,12 +633,12 @@
       "industry": "Legal",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1064,
-      "outreach_message": ""
+      "days_since_interaction": 1065,
+      "outreach_message": "Hello Bella, following our recent sales call, I wanted to share how our services can support your Legal Services Firm\u2019s efficiency and compliance. Let\u2019s set up a time to discuss next steps."
     },
     {
       "lead_id": 29,
@@ -414,9 +651,9 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1032,
+      "days_since_interaction": 1033,
       "outreach_message": ""
     }
   ],
-  "llm_enabled": false
+  "llm_enabled": true
 }

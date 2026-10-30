@@ -3,13 +3,166 @@
   "rubric": "Five factors scored 0-2: company size, industry, source/intent, interaction recency, data completeness.",
   "summary": {
     "total_processed": 20,
-    "qualified_count": 0,
-    "qualified_percent": 0.0,
-    "review_count": 20,
+    "qualified_count": 9,
+    "qualified_percent": 45.0,
+    "review_count": 11,
     "rejected_count": 0
   },
-  "priority_queue": [],
-  "sample_outreach_messages": [],
+  "priority_queue": [
+    {
+      "lead_id": 5,
+      "name": "Test_RecentEngagement",
+      "company": "Hot Lead Corp",
+      "industry": "SaaS",
+      "source": "Inbound demo request",
+      "qualification_score": 8,
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Test_RecentEngagement, thanks for requesting a demo from Hot Lead Corp. I'd like to schedule a quick call to show how our SaaS solution can accelerate your growth."
+    },
+    {
+      "lead_id": 11,
+      "name": "Test_HighValueMatch",
+      "company": "Perfect Fit Enterprise",
+      "industry": "SaaS",
+      "source": "Inbound demo request",
+      "qualification_score": 8,
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Test_HighValueMatch,\n\nThank you for requesting a demo at Perfect Fit Enterprise. We\u2019re excited to show you how our SaaS solution can streamline your operations and drive growth. Let\u2019s schedule a quick call to dive into your specific needs.\n\nBest regards,\n[Your Name]"
+    },
+    {
+      "lead_id": 4,
+      "name": "Test_StaleInteraction",
+      "company": "Old Company Inc",
+      "industry": "Manufacturing",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1598,
+      "outreach_message": "Hi Test_StaleInteraction, I saw that Old Company Inc is in manufacturing and we had a sales call. I'd love to discuss how our solution can help streamline your processes."
+    },
+    {
+      "lead_id": 7,
+      "name": "Test_UnknownIndustry",
+      "company": "Mysterious Startup",
+      "industry": "Unknown Sector",
+      "source": "Referral",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Test_UnknownIndustry, thanks for the referral to Mysterious Startup. Even though the industry is not specified, we believe our platform can add value. Let's connect."
+    },
+    {
+      "lead_id": 9,
+      "name": "Test_MultipleInteractions",
+      "company": "Active Company",
+      "industry": "Finance",
+      "source": "Inbound demo request",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Test_MultipleInteractions, I see Active Company is in finance and has had multiple interactions. I'd love to discuss how our solution can support your financial operations."
+    },
+    {
+      "lead_id": 17,
+      "name": "Test_MidMarketSoft",
+      "company": "Mid Market Software",
+      "industry": "SaaS",
+      "source": "Content download",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1016,
+      "outreach_message": "Hi Test_MidMarketSoft,\n\nThank you for downloading our content at Mid Market Software. We\u2019d love to discuss how our SaaS platform can help you scale efficiently. Let\u2019s set up a brief call to explore your goals.\n\nBest,\n[Your Name]"
+    },
+    {
+      "lead_id": 18,
+      "name": "Test_StartupShutdown",
+      "company": "Failed Startup",
+      "industry": "SaaS",
+      "source": "Referral",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size is near target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1278,
+      "outreach_message": "Hi Test_StartupShutdown,\n\nThanks for the referral to Failed Startup. We\u2019re eager to show how our SaaS solution can revitalize your operations. Could we schedule a quick chat to discuss your needs?\n\nRegards,\n[Your Name]"
+    },
+    {
+      "lead_id": 19,
+      "name": "Test_GovernmentBuyer",
+      "company": "Government Tech",
+      "industry": "Government",
+      "source": "Sales call",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Test_GovernmentBuyer,\n\nFollowing our recent sales call at Government Tech, I\u2019d like to share how our SaaS platform can support your government initiatives. Let\u2019s arrange a brief call to dive deeper.\n\nThank you,\n[Your Name]"
+    },
+    {
+      "lead_id": 20,
+      "name": "Test_SMBAverage",
+      "company": "Average SMB Co",
+      "industry": "Retail",
+      "source": "Inbound demo request",
+      "qualification_score": 7,
+      "decision": "QUALIFIED",
+      "priority": "MEDIUM",
+      "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
+      "missing_fields": [],
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Test_SMBAverage,\n\nThank you for requesting a demo at Average SMB Co. We\u2019re excited to demonstrate how our SaaS solution can boost your retail operations. Let\u2019s schedule a quick call to discuss your specific challenges.\n\nBest,\n[Your Name]"
+    }
+  ],
+  "sample_outreach_messages": [
+    {
+      "name": "Test_StaleInteraction",
+      "company": "Old Company Inc",
+      "message": "Hi Test_StaleInteraction, I saw that Old Company Inc is in manufacturing and we had a sales call. I'd love to discuss how our solution can help streamline your processes."
+    },
+    {
+      "name": "Test_RecentEngagement",
+      "company": "Hot Lead Corp",
+      "message": "Hi Test_RecentEngagement, thanks for requesting a demo from Hot Lead Corp. I'd like to schedule a quick call to show how our SaaS solution can accelerate your growth."
+    },
+    {
+      "name": "Test_UnknownIndustry",
+      "company": "Mysterious Startup",
+      "message": "Hi Test_UnknownIndustry, thanks for the referral to Mysterious Startup. Even though the industry is not specified, we believe our platform can add value. Let's connect."
+    },
+    {
+      "name": "Test_MultipleInteractions",
+      "company": "Active Company",
+      "message": "Hi Test_MultipleInteractions, I see Active Company is in finance and has had multiple interactions. I'd love to discuss how our solution can support your financial operations."
+    },
+    {
+      "name": "Test_HighValueMatch",
+      "company": "Perfect Fit Enterprise",
+      "message": "Hi Test_HighValueMatch,\n\nThank you for requesting a demo at Perfect Fit Enterprise. We\u2019re excited to show you how our SaaS solution can streamline your operations and drive growth. Let\u2019s schedule a quick call to dive into your specific needs.\n\nBest regards,\n[Your Name]"
+    }
+  ],
   "leads": [
     {
       "lead_id": 1,
@@ -22,7 +175,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -36,7 +189,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -50,7 +203,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -60,12 +213,12 @@
       "industry": "Manufacturing",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1597,
-      "outreach_message": ""
+      "days_since_interaction": 1598,
+      "outreach_message": "Hi Test_StaleInteraction, I saw that Old Company Inc is in manufacturing and we had a sales call. I'd love to discuss how our solution can help streamline your processes."
     },
     {
       "lead_id": 5,
@@ -74,12 +227,12 @@
       "industry": "SaaS",
       "source": "Inbound demo request",
       "qualification_score": 8,
-      "decision": "REVIEW",
-      "priority": "MEDIUM",
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
-      "outreach_message": ""
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Test_RecentEngagement, thanks for requesting a demo from Hot Lead Corp. I'd like to schedule a quick call to show how our SaaS solution can accelerate your growth."
     },
     {
       "lead_id": 6,
@@ -105,12 +258,12 @@
       "industry": "Unknown Sector",
       "source": "Referral",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": ""
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Test_UnknownIndustry, thanks for the referral to Mysterious Startup. Even though the industry is not specified, we believe our platform can add value. Let's connect."
     },
     {
       "lead_id": 8,
@@ -123,7 +276,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -133,12 +286,12 @@
       "industry": "Finance",
       "source": "Inbound demo request",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
-      "outreach_message": ""
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Test_MultipleInteractions, I see Active Company is in finance and has had multiple interactions. I'd love to discuss how our solution can support your financial operations."
     },
     {
       "lead_id": 10,
@@ -151,7 +304,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
+      "days_since_interaction": 1016,
       "outreach_message": ""
     },
     {
@@ -161,12 +314,12 @@
       "industry": "SaaS",
       "source": "Inbound demo request",
       "qualification_score": 8,
-      "decision": "REVIEW",
-      "priority": "MEDIUM",
+      "decision": "QUALIFIED",
+      "priority": "HIGH",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1013,
-      "outreach_message": ""
+      "days_since_interaction": 1014,
+      "outreach_message": "Hi Test_HighValueMatch,\n\nThank you for requesting a demo at Perfect Fit Enterprise. We\u2019re excited to show you how our SaaS solution can streamline your operations and drive growth. Let\u2019s schedule a quick call to dive into your specific needs.\n\nBest regards,\n[Your Name]"
     },
     {
       "lead_id": 12,
@@ -179,7 +332,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size is outside target or unknown; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1018,
+      "days_since_interaction": 1019,
       "outreach_message": ""
     },
     {
@@ -195,7 +348,7 @@
       "missing_fields": [
         "company"
       ],
-      "days_since_interaction": 1014,
+      "days_since_interaction": 1015,
       "outreach_message": ""
     },
     {
@@ -225,7 +378,7 @@
       "missing_fields": [
         "source"
       ],
-      "days_since_interaction": 1013,
+      "days_since_interaction": 1014,
       "outreach_message": ""
     },
     {
@@ -239,7 +392,7 @@
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1020,
+      "days_since_interaction": 1021,
       "outreach_message": ""
     },
     {
@@ -249,12 +402,12 @@
       "industry": "SaaS",
       "source": "Content download",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry matches provisional target; Source suggests some engagement; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1015,
-      "outreach_message": ""
+      "days_since_interaction": 1016,
+      "outreach_message": "Hi Test_MidMarketSoft,\n\nThank you for downloading our content at Mid Market Software. We\u2019d love to discuss how our SaaS platform can help you scale efficiently. Let\u2019s set up a brief call to explore your goals.\n\nBest,\n[Your Name]"
     },
     {
       "lead_id": 18,
@@ -263,12 +416,12 @@
       "industry": "SaaS",
       "source": "Referral",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size is near target; Industry matches provisional target; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1277,
-      "outreach_message": ""
+      "days_since_interaction": 1278,
+      "outreach_message": "Hi Test_StartupShutdown,\n\nThanks for the referral to Failed Startup. We\u2019re eager to show how our SaaS solution can revitalize your operations. Could we schedule a quick chat to discuss your needs?\n\nRegards,\n[Your Name]"
     },
     {
       "lead_id": 19,
@@ -277,12 +430,12 @@
       "industry": "Government",
       "source": "Sales call",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1016,
-      "outreach_message": ""
+      "days_since_interaction": 1017,
+      "outreach_message": "Hi Test_GovernmentBuyer,\n\nFollowing our recent sales call at Government Tech, I\u2019d like to share how our SaaS platform can support your government initiatives. Let\u2019s arrange a brief call to dive deeper.\n\nThank you,\n[Your Name]"
     },
     {
       "lead_id": 20,
@@ -291,13 +444,13 @@
       "industry": "Retail",
       "source": "Inbound demo request",
       "qualification_score": 7,
-      "decision": "REVIEW",
+      "decision": "QUALIFIED",
       "priority": "MEDIUM",
       "reasoning": "Company size fits target; Industry fit needs confirmation; Source suggests direct interest; Interaction is stale; All required fields are present",
       "missing_fields": [],
-      "days_since_interaction": 1014,
-      "outreach_message": ""
+      "days_since_interaction": 1015,
+      "outreach_message": "Hi Test_SMBAverage,\n\nThank you for requesting a demo at Average SMB Co. We\u2019re excited to demonstrate how our SaaS solution can boost your retail operations. Let\u2019s schedule a quick call to discuss your specific challenges.\n\nBest,\n[Your Name]"
     }
   ],
-  "llm_enabled": false
+  "llm_enabled": true
 }

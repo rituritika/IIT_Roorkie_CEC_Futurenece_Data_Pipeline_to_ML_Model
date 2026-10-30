@@ -54,6 +54,32 @@ python main.py leads_testing.csv
 
 The generated report is saved as `output_report.json` by default.
 
+## Lead Qualification Methodology
+
+Each lead is evaluated using five factors:
+
+1. Company Size – Maximum 2 points
+2. Industry Fit – Maximum 2 points
+3. Lead Source – Maximum 2 points
+4. Interaction Freshness – Maximum 2 points
+5. Data Completeness – Maximum 2 points
+
+Maximum Score: 10
+
+### Qualification Criteria
+- 7–10: QUALIFIED
+- 4–6: REVIEW
+- 0–3: REJECTED
+- Missing critical information: REVIEW
+
+### Priority Classification
+- HIGH: Qualified leads with score >= 8
+- MEDIUM: Qualified or Review leads
+- LOW: Remaining leads
+
+Every lead receives a score and an explanation
+to support transparent decision-making.
+
 ## Output
 The JSON report includes:
 - Total leads processed
